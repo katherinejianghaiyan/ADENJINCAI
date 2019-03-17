@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>购物车</title>
+    <link href="/css/common.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/myCart.css" rel="stylesheet" />
+    <script src="/js/autoWindow.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+<script>
+    $(function () {
+        $('.goods-choose .numBox').on('click', '.mins,.plus', function () {
+            var $input = $(this).siblings('input');
+            if ($input.val() < 0) {
+                $input.val(0);
+                return;
+            } else {
+                if ($(this).hasClass('mins')) {
+                    $input.val(Number($input.val()) - 1);
+                    if ($input.val() < 0) {
+                        $input.val(0);
+                    }
+                } else {
+                    $input.val(Number($input.val()) + 1);
+                }
+            }
+
+        });
+    })
+</script>
+<body class="container">
+    <!--------头部--------->
+    <header>
+        <a class="return" href="javascript:window.history.back(-1)"></a>
+        <span class="title">购物车</span>
+        <img class="search" src="/img/icon/search_03.png" />
+        <span class="language">English</span>
+    </header>
+
+    <!----------主体---------->
+    <section>
+        <!---购物车列表--->
+        <div class="goods-choose">
+            <span class="checkbox">
+                  <input type="checkbox"/>
+                  <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                  <img class="blur" src="/img/icon/cart-check-no.png"/>
+                </span>
+            <a href="#" class="goods-img"><img src="/img/goodsList_03.jpg"/></a>
+            <div class="sku">
+                <p><span class="name">红烧肉</span><span class="price">￥39</span></p>
+                <div class="numBox"><span class="quantity">数量：</span><b class="mins">-</b><input readonly="readonly" value="1" type="text"/><b class="plus">+</b></div>
+            </div>
+        </div>
+
+         <div class="goods-choose">
+            <span class="checkbox">
+                  <input type="checkbox"/>
+                  <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                  <img class="blur" src="/img/icon/cart-check-no.png"/>
+                </span>
+            <a href="#" class="goods-img"><img src="/img/goodsList_03.jpg"/></a>
+            <div class="sku">
+                <p><span class="name">红烧肉</span><span class="price">￥39</span></p>
+                <div class="numBox"><span class="quantity">数量：</span><b class="mins">-</b><input readonly="readonly" value="1" type="text"/><b class="plus">+</b></div>
+            </div>
+        </div>
+
+         <div class="goods-choose">
+            <span class="checkbox">
+                  <input type="checkbox"/>
+                  <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                  <img class="blur" src="/img/icon/cart-check-no.png"/>
+                </span>
+            <a href="#" class="goods-img"><img src="/img/goodsList_03.jpg"/></a>
+            <div class="sku">
+                <p><span class="name">红烧肉</span><span class="price">￥39</span></p>
+                <div class="numBox"><span class="quantity">数量：</span><b class="mins">-</b><input readonly="readonly" value="1" type="text"/><b class="plus">+</b></div>
+            </div>
+        </div>
+
+        <!--优惠促销-->
+        <div class="goods-promotion">
+            <p class="title">优惠促销(单笔金额满50选一个，满100选2个，满300选3个)</p>
+            <ul>
+                <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+                 <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+                 <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+                 <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+                 <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+                 <li>
+                    <img src="" alt="" />
+                    <p>香麻炸猪排</p>
+                    <p><del>￥7.8</del><span>￥5.8</span></p>
+                    <span class="checkbox">
+                      <input type="checkbox"/>
+                      <img class="focus" src="/img/icon/cart-check-yes.png"/>
+                      <img class="blur" src="/img/icon/cart-check-no.png"/>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <!--购物车小计-->
+        <div class="cart-total">
+            总计：<span>￥175</span>
+        </div>
+
+        <!--取货日期--->
+        <p class="getTime">请选择取货日期</p>
+        <p class="timeChoose">
+            <span class="checkbox fl">
+                  <input type="radio" name="time"/>
+                  <img class="focus" src="/img/icon/checkbox-focus.png"/>
+                  <img class="blur" src="/img/icon/checkbox.png"/>
+                    <span class="word">今天</span>
+            </span>
+          
+            <span class="checkbox fr">
+                  <input type="radio" name="time"/>
+                  <img class="focus" src="/img/icon/checkbox-focus.png"/>
+                  <img class="blur" src="/img/icon/checkbox.png"/>
+                    <span class="word">明天</span>
+            </span>
+        </p>
+
+        <!-----支付---->
+
+        <button class="continueShop">继续购物</button>
+        <button class="weixin">微信支付</button>
+        <button class="zfb">支付宝支付</button>
+    </section>
+
+
+ <!--------底部--------->
+    <footer>
+        <ul>
+            <li>
+                <a href="default.html">
+                    <p>
+                        <i class="iconfont">&#xe61d;</i>
+                    </p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <p>
+                        <i class="iconfont">&#xe60a;</i>
+                    </p>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li><a href="myCart.html">
+                <p>
+                    <img src="/img/icon/footer-cart_03.jpg" />
+                    <span class="numCart">1</span>
+                </p>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <p>
+                    <i class="iconfont">&#xe602;    </i>
+                </p>
+                <p>发现</p>
+            </a></li>
+            <li>
+                <a href="mine.html">
+                    <p>
+                        <i class="iconfont">&#xe63f;</i>
+                    </p>
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

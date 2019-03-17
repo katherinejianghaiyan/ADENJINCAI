@@ -1,0 +1,278 @@
+﻿.divSurveyItems {
+    background-color: WhiteSmoke;
+    margin-top: 0.4rem;
+    font-size: .8rem;
+    vertical-align: bottom;
+}
+
+section {
+    padding: 1rem .5rem;
+    width: 15rem;
+}
+
+.linkbutton {
+    display: block;
+    border: none;
+    width: 8rem;
+    margin: .5rem auto 0;
+    font-size: .75rem;
+    color: #fff;
+    text-align: center;
+    height: 1.375rem;
+    line-height: 1.375rem;
+    background-color: #aeea00
+}
+
+.divtext {
+    margin-top: 1rem;
+    margin-left: 10%;
+    width: 80%;
+}
+.multitext {
+    border: 1px solid #aeea00;
+    padding: 0.15rem;
+    font-size: .75rem;
+    height: 3rem;
+    width: 95%;
+}
+
+.onetext {
+    border: 1px solid #aeea00;
+    padding: 0.15rem;
+    font-size: .75rem;
+    height: 1rem;
+    width: 95%;
+    margin-bottom:0.2rem;
+}
+
+.myList {
+    border-top: .05rem solid #aeea00;
+}
+
+div.commentDetail {
+    overflow: hidden;
+    font-size: .6rem;
+    padding-left: 1rem;
+    padding-right:1rem
+}
+
+body {
+    background: #EFF1F2;
+}
+
+.diySection {
+    margin-top: 0rem;
+}
+
+.logo {
+    width:16rem;
+    height:3.8rem;
+    /*width: 100%;*/
+    padding-top: 2.28rem;
+}
+
+.event {
+    width: 100%;
+    padding-top: 2.28rem;
+}
+
+.logo-text1 {
+    position: absolute;
+    float: left;
+    margin-top: -3.75rem;
+    margin-left: 0rem;
+    color: red;
+    font-size: 0.5rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.logo-text3 {
+    position: absolute;
+    float: left;
+    margin-top: -1.08rem;
+    margin-left: 6.8rem;
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.btn {
+    display: none;
+}
+
+.title {
+    margin-top: -1rem;
+    text-align: center;
+    padding-bottom: .8rem;
+    line-height: 0.2rem;
+}
+
+.upper {
+    padding-bottom: 1.9rem;
+}
+
+.main {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: block;
+    position: relative;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    font-size: .53rem;
+    background: #FFFFFF;
+    -webkit-border-radius: .15rem;
+    border-radius: .19rem;
+}
+
+.name {
+    font-weight: bold;
+    padding-bottom: .1rem;
+    padding-left: 3rem;
+}
+
+.ingredients {
+    padding-bottom: .1rem;
+    padding-left:4rem;
+}
+
+.shortname-p {
+    padding-bottom: .2rem;
+}
+
+.shortname1 {
+    font-weight: bold;
+}
+
+.shortname2 {
+    padding-left: 1.5rem;
+    font-weight: bold;
+}
+
+.qty {
+    padding-left: .2rem;
+}
+
+.ampm {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+}
+
+.ampm-content {
+    padding-left: 0.25rem;
+}
+
+
+.mon-left-img {
+    position: absolute;
+    float: left;
+    width: 4.5rem;
+    margin-top: -3.6rem;
+    margin-left: -1.4rem;
+}
+
+.mon-right-img {
+    position: absolute;
+    right: .6rem;
+    width: 1.9rem;
+    margin-top: -3.1rem;
+}
+
+.tue-right-img {
+    position: absolute;
+    right: -.5rem;
+    width: 4rem;
+    margin-top: -2rem;
+}
+
+.wed-left-img {
+    position: absolute;
+    float: left;
+    width: 4rem;
+    margin-top: -3rem;
+    margin-left: -1.4rem;
+}
+
+.wed-right-img {
+    position: absolute;
+    right: .6rem;
+    width: 1.9rem;
+    margin-top: -2.3rem;
+}
+
+.thu-right-img {
+    position: absolute;
+    right: -.5rem;
+    width: 4rem;
+    margin-top: -2rem;
+}
+
+.fri-left-img {
+    position: absolute;
+    float: left;
+    width: 4rem;
+    margin-top: -3rem;
+    margin-left: -1.4rem;
+}
+
+.fri-right-img {
+    position: absolute;
+    right: .6rem;
+    width: 3rem;
+    margin-top: -2.0rem;
+}
+
+.empty-line1 {
+    padding-top: 3.5rem;
+}
+
+.empty-line2 {
+    padding-top: 2.2rem;
+}
+
+.lower {
+    padding-top: 1.5rem
+}
+
+.dashboard-title {
+    margin-top: .6rem;
+    text-align: center;
+    padding-bottom: .35rem;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.main2 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: block;
+    position: relative;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-size: .53rem;
+    background: #FFFFFF;
+    -webkit-border-radius: .15rem;
+    border-radius: .19rem;
+}
+
+.dashboard-img {
+    padding-top: .4rem;
+    width: 100%;
+    pointer-events: none;
+}
+
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fileinput-button input {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+}

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery幻灯片插件Owl Carousel演示-进度条_dowebok</title>
+    <style>
+        #owl-demo {
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            #owl-demo .item {
+                display: block;
+            }
+
+            #owl-demo img {
+                display: block;
+                width: 100%;
+                border: 0 none;
+            }
+    </style>
+    <link href="css/owl/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl/owl.theme.css" rel="stylesheet">
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/owl/owl.carousel.js"></script>
+    <script>
+        $(function () {
+
+            $('#owl-demo').owlCarousel({
+                singleItem: true,
+                afterMove: moved,
+
+            });
+
+
+            function moved() {
+                alert(1);
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Demo -->
+    <div id="owl-demo" class="owl-carousel">
+        <a class="item"><img src="img/login_img_02.jpg" alt=""></a>
+        <a class="item"><img src="img/siteimgs/load_lis.jpg" alt=""></a>
+
+    </div>
+    <!-- Demo end -->
+
+</body>
+</html>

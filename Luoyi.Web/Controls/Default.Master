@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Luoyi.Web.Controls.Default" %>
+
+<%@ Register Src="Header.ascx" TagName="Header" TagPrefix="ucheader" %>
+<%@ Register Src="Footer.ascx" TagName="Footer" TagPrefix="ucfooter" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title><%= Luoyi.Web.HtmlLang.Lang("Title","Online Service","Master") %></title>
+    <link href="<%= Luoyi.Common.WebHelper.GetUrlPath("/css") %>/common.css?<%= Guid.NewGuid() %>" rel="stylesheet" />
+    <link href="<%= Luoyi.Common.WebHelper.GetUrlPath("/css") %>/layout.css?<%= Guid.NewGuid() %>" rel="stylesheet" />
+    <link href="<%= Luoyi.Common.WebHelper.GetUrlPath("/css") %>/weui.css" rel="stylesheet" />
+    <script type="text/javascript" src="<%= Luoyi.Common.WebHelper.GetUrlPath("/js") %>/autoWindow.js"></script>
+    <script type="text/javascript" src="<%= Luoyi.Common.WebHelper.GetUrlPath("/js") %>/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="<%= Luoyi.Common.WebHelper.GetUrlPath("/js") %>/cart.js?<%= Guid.NewGuid() %>"></script>
+   <%-- <script type="text/javascript" src="/js/owl.carousel.min.js"></script>--%>
+    <script type="text/javascript">
+        $(function () {
+            if ($("#hidWxConfig").val() != "") {
+                var wxconfig = jQuery.parseJSON($("#hidWxConfig").val());
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId: wxconfig.appId, // 必填，公众号的唯一标识
+                    timestamp: wxconfig.timeStamp, // 必填，生成签名的时间戳
+                    nonceStr: wxconfig.nonceStr, // 必填，生成签名的随机串
+                    signature: wxconfig.signature,// 必填，签名，见附录1
+                    jsApiList: [
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage',
+                        'onMenuShareQQ',
+                        'onMenuShareWeibo',
+                        'onMenuShareQZone',
+                        'startRecord',
+                        'stopRecord',
+                        'onVoiceRecordEnd',
+                        'playVoice',
+                        'pauseVoice',
+                        'stopVoice',
+                        'onVoicePlayEnd',
+                        'uploadVoice',
+                        'downloadVoice',
+                        'chooseImage',
+                        'previewImage',
+                        'uploadImage',
+                        'downloadImage',
+                        'translateVoice',
+                        'getNetworkType',
+                        'openLocation',
+                        'getLocation',
+                        'hideOptionMenu',
+                        'showOptionMenu',
+                        'hideMenuItems',
+                        'showMenuItems',
+                        'hideAllNonBaseMenuItem',
+                        'showAllNonBaseMenuItem',
+                        'closeWindow',
+                        'scanQRCode',
+                        'chooseWXPay',
+                        'openProductSpecificView',
+                        'addCard',
+                        'chooseCard',
+                        'openCard'
+                    ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            return;
+           // var time = new Date().getTime();
+            var css = document.getElementsByTagName('link');
+            for (var i = 0; i < css.length; i++) {
+                css[i].href += '?';// + time;
+               // alert(css[i].href);
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container">
+    <form id="formJC" runat="server">
+        <asp:HiddenField ID="hidWxConfig" runat="server" ClientIDMode="Static" />
+        <ucheader:Header ID="Header" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <ucfooter:Footer ID="Footer" runat="server" />
+    </form>
+    <div class="weui_dialog_alert" style="display: none;">
+        <div class="weui_mask"></div>
+        <div class="weui_dialog">
+            <div class="weui_dialog_hd"><strong class="weui_dialog_title">提示</strong></div>
+            <div class="weui_dialog_bd"></div>
+            <div class="weui_dialog_ft">
+                <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+            </div>
+        </div>
+    </div>
+    <div id="toast" style="display: none;">
+        <div class="weui_mask_transparent"></div>
+        <div class="weui_toast">
+            <i class="weui_icon_toast"></i>
+            <p class="weui_toast_content"></p>
+        </div>
+    </div>
+</body>
+</html>

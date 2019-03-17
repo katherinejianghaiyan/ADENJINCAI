@@ -1,0 +1,541 @@
+﻿.goods-img
+{
+    width: 16rem;
+    height: 8rem;
+}
+
+section
+{
+    margin-top: 0 !important;
+    padding-top: .5rem;
+    width: 14rem !important;
+    margin: 0 auto 3rem;
+}
+
+.head-img-wrap
+{
+    position: relative;
+    width: 16rem;
+    height: 8rem;
+    margin-top: 2.25rem;
+}
+
+    .head-img-wrap .radius
+    {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 1.25rem;
+        left: 6rem;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+        .head-img-wrap .radius .head-img
+        {
+            display: block;
+            margin: .15rem auto;
+            height: 3.7rem;
+            width: 3.7rem;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+.goods-name
+{
+    font-size: .75rem;
+    color: #0d0d0d;
+}
+
+.goods-sku
+{
+    height: 1.375rem;
+    line-height: 1.375rem;
+    font-size: .45rem;
+    color: #111;
+    margin-bottom: .25rem;
+}
+
+    .goods-sku .sku img
+    {
+        width: .875rem;
+        height: .875rem;
+        float: left;
+        margin-top: .3rem;
+    }
+
+    .goods-sku span
+    {
+        display: inline-block;
+        width: 6.25rem;
+        height: 1.375rem;
+        float: left;
+    }
+
+        .goods-sku span small
+        {
+            display: block;
+            float: left;
+            line-height: 30px;
+            padding-left: 0.2rem;
+            margin-top: .3rem;
+            font-size: .55rem;
+        }
+
+span.addCart
+{
+    display: block;
+    float: right;
+    height: 1.375rem;
+    text-align: right;
+}
+
+    span.addCart img
+    {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-top: .1rem;
+        cursor: pointer;
+    }
+
+p.msg
+{
+    line-height: .975rem;
+    margin-bottom: .25rem;
+    background-color: #aeea00;
+    color: #fff;
+    font-size: .65rem;
+    text-indent: .5rem;
+}
+
+.goods-price
+{
+    height: 3.125rem;
+    margin-top: .5rem;
+    border-top: .05rem solid #939393;
+    border-bottom: .05rem solid #939393;
+}
+
+    .goods-price .price
+    {
+        font-size: 1rem;
+        color: #aeea00;
+        height: 1.85rem;
+        line-height: 1.85rem;
+    }
+
+        .goods-price .price img
+        {
+            float: right;
+            margin-top: .385rem;
+        }
+
+            .goods-price .price img.fav
+            {
+                width: .9rem;
+                height: .9rem;
+                margin-right: 1rem;
+            }
+
+            .goods-price .price img.fx
+            {
+                width: .9rem;
+                height: .9rem;
+            }
+
+    .goods-price .comment
+    {
+        font-size: .55rem;
+        color: #0d0d0d;
+    }
+
+        .goods-price .comment span:first-child
+        {
+            padding-left: .2rem;
+        }
+
+        .goods-price .comment img.star
+        {
+            vertical-align: middle;
+            padding-right: 1rem;
+        }
+
+p.summary
+{
+    color: #0d0d0d;
+    font-size: .65rem;
+    border-bottom: .05rem solid #939393;
+    line-height: .9rem;
+    padding: .25rem 0 1rem 0;
+}
+
+.product
+{
+    width: 14rem;
+    overflow: hidden;
+}
+
+    .product ul.title
+    {
+        width: 14rem;
+        height: .875rem;
+        position: relative;
+    }
+
+        .product ul.title li
+        {
+            width: 7rem;
+            float: left;
+            height: .975rem;
+            line-height: .975rem;
+            text-align: center;
+            color: #FFF;
+            font-size: .6rem;
+            background-color: #757575;
+        }
+
+            .product ul.title li.current
+            {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 1.125rem;
+                width: 7rem;
+                z-index: -1;
+                background-color: #aeea00;
+            }
+
+    .product .proInfo
+    {
+        margin-top: .5rem;
+    }
+
+p.imgLine
+{
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+}
+
+    p.imgLine img
+    {
+        display: block;
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+        height: 7.175rem;
+    }
+
+        p.imgLine img:nth-child(1)
+        {
+            margin-right: .1rem;
+        }
+
+        p.imgLine img:nth-child(2)
+        {
+            margin-right: .1rem;
+        }
+
+p.numWeight
+{
+    color: #0d0d0d;
+    font-size: .6rem;
+    margin-top: .3rem;
+}
+
+    p.numWeight .num
+    {
+        font-size: 1.1rem;
+        color: #aeea00;
+        padding-right: .3rem;
+    }
+
+ul.scale
+{
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    padding-top: .2rem;
+}
+
+    ul.scale li
+    {
+        box-flex: 1;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -o-box-flex: 1;
+    }
+
+
+
+.circle
+{
+    width: 2.85rem;
+    height: 2.85rem;
+    position: relative;
+    border-radius: 50%;
+    background: #aeea00;
+    margin: 0 auto;
+}
+
+.pie_left, .pie_right
+{
+    width: 2.85rem;
+    height: 2.85rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left, .right
+{
+    display: block;
+    width: 2.85rem;
+    height: 2.85rem;
+    background: #757575;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pie_right, .right
+{
+    clip: rect(0,auto,auto,1.425rem);
+}
+
+.pie_left, .left
+{
+    clip: rect(0,1.425rem,auto,0);
+}
+
+.mask
+{
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    top: 0.55rem;
+    left: .55rem;
+    background: #FFF;
+    position: absolute;
+    text-align: center;
+    line-height: 1.75rem;
+    font-size: .6rem;
+    color: #aeea00;
+}
+
+.circle-p
+{
+    margin: .875rem 0;
+    text-align: center;
+    font-size: .65rem;
+    color: #0d0d0d;
+}
+
+.constituents-title
+{
+    height: .875rem;
+    width: 14rem;
+    background-color: #aeea00;
+    color: #fff;
+    text-align: center;
+    font-size: .65rem;
+    line-height: .875rem;
+}
+
+.constituents-content
+{
+    padding: .2rem 0;
+    width: 14rem;
+}
+    .constituents-content li {
+        margin-bottom: .375rem;
+        height: .875rem;
+        font-size: .6rem;
+    }
+
+        .constituents-content li span:nth-child(1) {
+            width: 11rem;
+            //4.25rem;
+            display: block;
+            float: left;
+            text-indent: .55rem;
+            height: .875rem;
+            line-height: .875rem;
+            background-color: #757575;
+            color: #fff;
+        }
+
+        .constituents-content li span:nth-child(2) {
+            width: 2.25rem;
+            //9.5rem;
+            display: block;
+            float: right;
+            //text-indent: 1.375rem;
+            height: .875rem;
+            line-height: .875rem;
+            background-color: #757575;
+            color: #fff;
+        }
+
+    .set-content li
+    {
+        margin-bottom: .375rem;
+        height: 1.8rem;//.875rem;
+        font-size: .6rem;
+    }
+
+        .set-content li span:nth-child(1)
+        {
+            
+            width: 11.25rem;//4.25rem;
+            display: block;
+            float: left;
+            padding-left: 0.2rem;
+            height: 1.8rem;//.875rem;
+            line-height: .875rem;
+            background-color: #757575;
+            color: #fff;
+        }
+
+        .set-content li span:nth-child(2)
+        {
+            width: 2rem;//9.5rem;
+            display: block;
+            float: right;
+            padding-right: 0.2rem;
+            text-align: right;
+            
+            height: 1.8rem; //.875rem;
+            line-height: .875rem;
+            background-color: #757575;
+            color: #fff;
+        }
+
+p.step
+{
+    height: .875rem;
+    width: 14rem;
+    background-color: #aeea00;
+    color: #fff;
+    text-align: center;
+    font-size: .65rem;
+    line-height: .875rem;
+}
+
+    p.step span
+    {
+        padding: 0 .5rem;
+    }
+
+p.stepDetail
+{
+    color: #0d0d0d;
+    font-size: .7rem;
+    text-align: center;
+    padding: .375rem;
+    line-height: 1rem;
+}
+
+.smile
+{
+    height: 1.375rem;
+    width: 14rem;
+    background-color: #aeea00;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+    .smile img
+    {
+        display: block;
+        margin: 0 auto;
+        padding-top: .1rem;
+        width: 1.425rem;
+        height: 1.25rem;
+    }
+
+.commentDiv
+{
+    display: none;
+    margin-top: .5rem;
+}
+
+    .commentDiv .comment
+    {
+        font-size: .55rem;
+        color: #0d0d0d;
+        padding-bottom: .45rem;
+        border-bottom: .05rem solid #939393;
+    }
+
+        .commentDiv .comment span:first-child
+        {
+            padding-left: .2rem;
+        }
+
+        .commentDiv .comment img.star
+        {
+            vertical-align: middle;
+            padding-right: 1rem;
+        }
+
+        .commentDiv .comment .fr
+        {
+            padding-right: 1rem;
+        }
+
+    .commentDiv div.commentList
+    {
+        border-bottom: .025rem solid #939393;
+        padding: .45rem 0 .7rem 0;
+        line-height: 1rem;
+    }
+
+        .commentDiv div.commentList .title img
+        {
+            width: .825rem;
+            height: .925rem;
+            padding-right: .825rem;
+            vertical-align: middle;
+            margin-top: -.3rem;
+        }
+
+        .commentDiv div.commentList .title span.name
+        {
+            color: #0d0d0d;
+            font-size: .65rem !important;
+        }
+
+        .commentDiv div.commentList .title
+        {
+            color: #0d0d0d;
+            font-size: .55rem;
+        }
+
+            .commentDiv div.commentList .title .time
+            {
+                margin-left: 1.375rem;
+            }
+
+        .commentDiv div.commentList .content
+        {
+            color: #0d0d0d;
+            font-size: .7rem;
+            line-height: 1rem;
+            margin-top: .3rem;
+        }
+
+.commentNum
+{
+    padding-bottom: 0 !important;
+    text-align: right;
+}
+
+    .commentNum span
+    {
+        line-height: 1.5rem;
+    }

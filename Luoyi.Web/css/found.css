@@ -1,0 +1,16 @@
+﻿section {
+    margin-top:0 !important
+}
+.goods-img {
+    width:16rem;
+    height:8rem;
+    margin-top:2.25rem;
+}
+article {
+    width:14rem;
+    margin:0 auto;
+    padding:1rem 0;
+    color:#000000;
+    font-size:.65rem;
+    line-height:.7rem
+}

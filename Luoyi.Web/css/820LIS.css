@@ -1,0 +1,202 @@
+﻿body {
+    background: #EFF1F2;
+}
+
+.diySection {
+    margin-top: .5rem;
+}
+
+.logo {
+    width: 100%;
+    padding-top: 2.28rem;
+}
+.logo-text3 {
+    position: absolute;
+    float: left;
+    margin-top: -4.75rem;
+    margin-left: 2rem;
+    color: #FFFFFF;
+    font-size: 1.085rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+.logo-text1 {
+    position: absolute;
+    float: left;
+    margin-top: -4.75rem;
+    margin-left: 2rem;
+    color: #FFFFFF;
+    font-size: 1.085rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.logo-text2 {
+    position: absolute;
+    float: left;
+    margin-top: -3.2rem;
+    margin-left: 2rem;
+    color: #FFFFFF;
+    font-size: .68rem;
+}
+.btn {
+    display: none;
+} 
+
+.title {
+    margin-top: -1rem;
+    text-align: center;
+    padding-bottom: .8rem;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.upper {
+    padding-bottom: 1.9rem;
+}
+.main {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: block;
+    position: relative;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    font-size: .53rem;
+    background: #FFFFFF;
+    -webkit-border-radius: .15rem;
+    border-radius: .19rem;
+}
+
+.name {
+    font-weight:bold;
+    padding-bottom: .1rem;
+}
+
+.ingredients {
+    padding-bottom: .2rem;
+}
+
+.shortname-p {
+    padding-bottom: .2rem;
+}
+
+.shortname1 {
+    font-weight: bold;
+}
+
+.shortname2 {
+    padding-left: 1.5rem;
+    font-weight: bold;
+}
+
+.qty {
+    padding-left: .2rem;
+}
+
+.ampm {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+}
+
+.ampm-content {
+    padding-left: 0.25rem;
+}
+ 
+
+.mon-left-img {
+    position: absolute;
+    float: left;
+    width: 4.5rem;
+    margin-top: -3.6rem;
+    margin-left: -1.4rem;
+}
+
+.mon-right-img {
+    position: absolute;
+    right:.6rem;
+    width: 1.9rem;
+    margin-top: -3.3rem;
+}
+
+.tue-right-img {
+    position: absolute;
+    right: -.5rem;
+    width: 4rem;
+    margin-top: -2rem;
+}
+
+.wed-left-img {
+    position: absolute;
+    float: left;
+    width: 4rem;
+    margin-top: -3rem;
+    margin-left: -1.4rem;
+}
+
+.wed-right-img {
+    position: absolute;
+    right: .6rem;
+    width: 1.9rem;
+    margin-top: -2.3rem;
+}
+
+.thu-right-img {
+    position: absolute;
+    right: -.5rem;
+    width: 4rem;
+    margin-top: -2rem;
+}
+
+.fri-left-img {
+    position: absolute;
+    float: left;
+    width: 4rem;
+    margin-top: -3rem;
+    margin-left: -1.4rem;
+}
+
+.fri-right-img {
+    position: absolute;
+    right: .6rem;
+    width: 3rem;
+    margin-top: -2.0rem;
+}
+
+.empty-line1 {
+    padding-top: 3.5rem;
+}
+
+.empty-line2 {
+    padding-top: 2.2rem;
+}
+
+.lower {
+    padding-top: 1.5rem
+}
+
+.dashboard-title {
+    margin-top: .6rem;
+    text-align: center;
+    padding-bottom: .35rem;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.main2 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    display: block;
+    position: relative;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-size: .53rem;
+    background: #FFFFFF;
+    -webkit-border-radius: .15rem;
+    border-radius: .19rem;
+}
+
+.dashboard-img {
+    padding-top: .4rem;
+    width: 100%;
+    pointer-events: none;
+}

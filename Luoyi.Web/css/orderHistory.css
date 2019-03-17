@@ -1,0 +1,35 @@
+﻿section {
+    margin-top:0 !important
+}
+.goods-img {
+    width:16rem;
+    height:8rem;
+    margin-top:2.25rem;
+}
+    .pickUp-table .left p {
+        font-size:.65rem;
+        color:#111;
+        margin-top:.2rem;
+    }.pickUp-table {
+    border-bottom:.05rem solid #777777;
+    margin-top:.5rem;
+    overflow:hidden;
+    padding-bottom:.75rem;
+    position:relative;
+}
+.pickUp-table .left{
+    float:left;
+}
+.againOrder {
+    position:absolute;
+    bottom:.75rem;
+    right:0;
+    height:1.25rem;
+    line-height:1.25rem;
+    width:5.25rem;
+    text-align:center;
+    color:#fff;
+    background-color:#aeea00;
+    border:none;
+    font-size:.7rem;
+}

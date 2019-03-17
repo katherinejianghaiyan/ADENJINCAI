@@ -1,0 +1,490 @@
+﻿.mealtimes {
+    margin-top: 1rem;
+    border: 1px solid #aeea00;
+    padding: .5rem;
+    font-size: .65rem;
+    color: #333;
+    line-height: 1rem;
+    margin-bottom: .5rem;
+}
+
+section {
+    padding:1rem .5rem;
+    width:15rem;
+}
+    section .goods-choose {
+        border-bottom:.05rem solid #939393;
+        height:2.75rem;
+        position:relative;
+        padding:.5rem 0;
+    }
+         section .goods-choose .goods-img {
+            display:block;
+            width:4.75rem;
+            height:2.75rem;
+                    margin-left:1.375rem;
+            float:left;
+        }
+            section .goods-choose .goods-img img {
+                width:4.75rem;
+            height:2.75rem;
+            }
+
+
+         section .goods-choose .checkbox {
+        position:absolute;
+        width:1.375rem;
+        height:.9rem;
+        top:.5rem;
+        left:0;
+        height:2.75rem;
+    }
+   section .goods-choose  input[type=checkbox] {
+        position:absolute;
+        left:0;
+        z-index:2;   
+        filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+        -moz-opacity:0; /*Firefox私有，透明度50%*/
+        opacity:0;
+        height:100%;
+        width:100%;
+    }
+
+       section .goods-choose  .checkbox img {
+            width:0.9rem;
+            height:0.9rem;
+            position:absolute;
+                top: 1rem;
+             left: .1rem;
+            display:none;
+        }
+
+    section .goods-choose .checkbox .blur{
+        display:block;
+    }
+   section .goods-choose .checkbox input:checked+.focus {
+        display:block;
+    }
+    section .goods-choose .checkbox input:checked~.blur {
+        display:none;
+    }
+
+
+        section .goods-choose .sku {
+            float:right;
+            height:2.75rem;
+            width:7.5rem;
+            overflow:hidden;
+        }
+            section .goods-choose .sku>p {
+                height:.85rem;
+                overflow:hidden;
+            }
+                section .goods-choose .sku > p .name {
+                    display:block;
+                    float:left;
+                    height:.85rem;
+                    width:5rem;
+                    overflow:hidden;
+                    color:#0d0d0d;
+                    font-size:.5rem;
+                }
+                section .goods-choose .sku > p .price {
+                    display:block;
+                    float:right;
+                    color:#aeea00;
+                    font-size:.7rem;
+                }
+        section .goods-choose .numBox {
+            position:absolute;
+            right:0;
+            bottom:0.5rem;
+            width:6.255rem;
+            height:1.375rem;
+            background-color:#999999;
+            color:#fff;
+            font-size:.6rem;
+            line-height:1.375rem;
+        }
+
+            section .goods-choose .numBox .quantity {
+                    padding: 0 .4rem;
+            }
+
+            section .goods-choose .numBox input[type=text] {
+                height:1rem;
+                width:1rem;
+                background-color:#aeea00;
+                border:none;
+                text-align:center;
+                font-size:.6rem;
+                color:#fff;
+                position:absolute;
+                left:3.55rem;
+                top:.2rem;
+            }
+            section .goods-choose .numBox b {
+                    line-height:.6rem;
+                    font-size:.9rem
+                
+            }
+                section .goods-choose .numBox b.mins {
+                    position:absolute;
+                    left:1.45rem;
+                    padding:.3rem 1rem;
+                }
+                 section .goods-choose .numBox b.plus {
+                    position:absolute;
+                    right:-.5rem  ;
+                    padding:.3rem 1rem;
+                }
+.cart-total {
+    height:1rem;
+    line-height:1rem;
+    background-color:#aeea00;
+    color:#fff;
+    font-size:.75rem;
+    text-align:right;
+    margin-top:.45rem;
+    padding-right:.5rem
+}
+.getTime {
+    color:#0d0d0d;
+    font-size:.55rem;
+    margin:.35rem 0;
+}
+.timeChoose {
+    height:1.375rem;
+    background-color:#aeea00;
+    font-size:.5rem;
+    color:#fff;
+    position:relative;
+}
+
+
+
+
+
+
+         .timeChoose .checkbox.fl {
+        position:absolute;
+        width:1.375rem;
+        height:100%;
+        top:0;
+        left:0;
+    }
+   .timeChoose .fl  input[type=radio] {
+        position:absolute;
+        left:0;
+        z-index:2;   
+        filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+        -moz-opacity:0; /*Firefox私有，透明度50%*/
+        opacity:0;
+        height:100%;
+        width:100%;
+    }
+
+      .timeChoose  .checkbox.fl img {
+            width:0.9rem;
+            height:0.9rem;
+            position:absolute;
+                top: .25rem;
+             left: .5rem;
+            display:none;
+        }
+    .timeChoose .fl .word {
+        position:absolute;
+        left:1.8rem;
+        display:block;
+        width: 2rem;
+        top: .25rem;
+        font-size: .65rem;
+    }
+    .timeChoose .addr {
+        position: absolute;
+        left: .5rem;
+        display: block;
+        top: .25rem;
+        font-size: .65rem;
+    }
+   .timeChoose .checkbox.fl .blur{
+        display:block;
+    }
+   .timeChoose .checkbox.fl input:checked+.focus {
+        display:block;
+    }
+    .timeChoose .checkbox.fl input:checked~.blur {
+        display:none;
+    }
+
+
+
+       .timeChoose .checkbox.fr {
+        position:absolute;
+        width:1.375rem;
+        height:100%;
+        top:0;
+        left:5rem;
+    }
+   .timeChoose .fr  input[type=radio] {
+        position:absolute;
+        left:0;
+        z-index:2;   
+        filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+        -moz-opacity:0; /*Firefox私有，透明度50%*/
+        opacity:0;
+        height:100%;
+        width:100%;
+    }
+
+      .timeChoose  .checkbox.fr img {
+            width:0.9rem;
+            height:0.9rem;
+            position:absolute;
+                top: .25rem;
+             left: .5rem;
+            display:none;
+        }
+    .timeChoose .fr .word {
+        position:absolute;
+        left:1.8rem;
+        display:block;
+            width: 2rem;
+        top: .25rem;
+        font-size:.65rem
+    }
+   .timeChoose .checkbox.fr .blur{
+        display:block;
+    }
+   .timeChoose .checkbox.fr input:checked+.focus {
+        display:block;
+    }
+    .timeChoose .checkbox.fr input:checked~.blur {
+        display:none;
+    }
+    .timeChoose .dinnertype {
+        position: absolute;
+        width: 1.375rem;
+        height: 100%;
+        top: 0.3rem;
+        left: 11rem;   
+    }
+    .timeChoose .Addr1 {
+        position: absolute;
+        width: 1.375rem;
+        height: 100%;
+        top: 0.3rem;
+        left: 1rem;
+    }
+    .timeChoose .Addr2 {
+        position: absolute;
+        width: 1.375rem;
+        height: 100%;
+        top: 0.3rem;
+        left: 1rem;
+    }
+    .timeChoose .Addr3 {
+        position: absolute;
+        width: 1.375rem;
+        height: 100%;
+        top: 0.3rem;
+        left: 9.2rem;
+    }
+.continueShop {
+    display:block;
+    border:none;
+    width:8rem;
+    margin:1rem auto 0;
+    font-size:.75rem;
+    color:#fff;
+    text-align:center;
+    height:1.375rem;
+    line-height:1.375rem;
+    background-color:#aeea00
+}
+.weixin,.zfb{
+    display:block;
+    border:none;
+     width:8rem;
+    margin:.5rem auto 0;
+    font-size:.75rem;
+    color:#fff;
+    text-align:center;
+    height:1.375rem;
+    line-height:1.375rem;
+    background-color:#aeea00
+}
+.goods-promotion {
+    border-bottom: .05rem solid #939393;
+    position: relative;
+    padding: .5rem 0;
+}
+    .goods-promotion .title {
+        font-size:.6rem;
+        color:#000;
+        line-height:.9rem;
+        padding:.5rem 0;
+    }
+    .goods-promotion ul {
+        overflow:hidden
+    }
+        .goods-promotion ul li {
+            position:relative;
+            width:4.75rem;
+            margin-right:.3rem;
+            float:left;
+            padding-bottom:.2rem;
+        }
+            .goods-promotion ul li:nth-child(3n) {
+                margin-right:0;
+            }
+            .goods-promotion ul li>img {
+                width:4.75rem;
+                height:2.75rem;
+            }
+            .goods-promotion ul li p:nth-of-type(1) {
+                font-size:.6rem;
+                color:#000;
+                line-height:1rem;
+                width:4.75rem;
+                overflow:hidden;
+                height:1rem
+            }
+            .goods-promotion ul li p:nth-of-type(2) {
+                font-size:.6rem;
+            }
+            .goods-promotion ul li p:nth-of-type(2) del {
+                float:left;
+                color:#aeea00
+            }
+             .goods-promotion ul li p:nth-of-type(2) span {
+                float:right;
+                color:#d10000;
+            }
+       section  .goods-promotion ul li .checkbox {
+        position:absolute;
+        width:100%;
+        height:.9rem;
+        top:0rem;
+        left:0;
+        height:100%;
+    }
+   section  .goods-promotion ul li  input[type=checkbox] {
+        position:absolute;
+        left:0;
+        z-index:2;   
+        filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+        -moz-opacity:0; /*Firefox私有，透明度50%*/
+        opacity:0;
+        height:100%;
+        width:100%;
+        cursor:pointer
+    }
+
+       section  .goods-promotion ul li  .checkbox img {
+            width:0.9rem;
+            height:0.9rem;
+            position:absolute;
+                top: .2rem;
+             left: .1rem;
+            display:none;
+            background-color:#fff;
+            border-radius:50%;
+        }
+
+    section  .goods-promotion ul li .checkbox .blur{
+        display:block;
+    }
+   section  .goods-promotion ul li .checkbox input:checked+.focus {
+        display:block;
+    }
+    section  .goods-promotion ul li .checkbox input:checked~.blur {
+        display:none;
+    }
+.specialOffers
+{
+    font-size:.6rem;
+    color:#000;
+    line-height:.9rem;
+    padding:.5rem 0 0;
+}
+.couponChoose
+{
+    display:block;
+    position:relative;
+    padding:.5rem 0;
+    font-size:.6rem;
+    cursor:pointer;
+    border-bottom:.05rem solid #939393;
+    overflow:hidden;
+}
+
+    .couponChoose .arrowRight
+    {
+        position:absolute;
+        right:.0rem;
+        top:.5rem;
+    }
+
+    .couponChoose .word
+    {
+        padding-left:.5rem;
+    }
+
+    .couponChoose .deductionEd
+    {
+        padding-right:.8rem;
+    }
+
+.commentText {
+    margin-top: .3rem;
+    width: 15rem;
+    background-color: #aeea00;
+    overflow: hidden;
+}
+
+    .commentText .wordNum {
+        height: 1rem;
+        line-height: 1rem;
+        color: #21441e;
+        font-size: .6rem;
+        padding-right: .5rem;
+    }
+
+    .commentText textarea {
+        height: 1.5rem;
+        width: 13.6rem;
+        border: none;
+        background-color: #aeea00;
+        resize: none;
+        color: #21441e;
+        font-size: .55rem;
+        padding: 0.1rem .2rem;
+        outline: none;
+    }
+
+    .commentText :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #21441e;
+    }
+
+    .commentText::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #21441e;
+    }
+
+    .commentText textarea:-ms-input-placeholder {
+        color: #21441e;
+    }
+
+    .commentText textarea::-webkit-input-placeholder {
+        color: #21441e;
+    }
+
+    .commentText .icon {
+        text-align: right;
+    }
+
+        .commentText .icon img {
+            height: 1.3rem;
+            width: 1.3rem;
+            padding-right: .5rem;
+        }

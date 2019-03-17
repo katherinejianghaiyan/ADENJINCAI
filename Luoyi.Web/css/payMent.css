@@ -1,0 +1,148 @@
+﻿p.orderNumber {
+    color:#111;
+    font-size:.65rem;
+    text-align:center;
+    margin-top:1rem;
+    height:.85rem;
+    overflow:hidden;
+}
+p.orderPrice {
+    color:#111;
+    font-size:1.8rem;
+    text-align:center;
+    margin-top:.25rem;
+}
+
+p.payee{
+    color:#111;
+    font-size:.65rem;
+    margin-top:1rem;
+    height:1.8rem;
+    overflow:hidden;
+}
+p.product {
+     color:#111;
+    font-size:.65rem;
+    overflow:hidden;
+    margin-top:.3rem;
+        height:.75rem;
+}
+p.payee .fl,
+p.product .fl{
+    display:block;
+    width:3.5rem;
+    text-align:left;
+}
+    p.payee .fr,
+    p.product .fr {
+        display: block;
+        width: 11rem;
+        text-align: right;
+    }
+p.btn-pay {
+    margin-top:1rem;
+}
+    p.btn-pay .button {
+        width:8rem;
+        height:1.4rem;
+        display:block;
+        margin:0 auto;
+        background-color:#aeea00;
+        color:#fff;
+        text-align:center;
+        line-height:1.4rem;
+        font-size:.65rem;
+        border:none;
+    }
+
+
+
+
+        p.btn-pay .button.disabled {
+            background-color:#ccc !important
+        }
+.erroMsg {
+    margin-top:1rem;
+    border:1px solid #aeea00;
+    padding:.5rem;
+    font-size:.65rem;
+    color:#333;
+    line-height:1rem;
+    margin-bottom:.5rem;
+}
+.agreement {
+    height:.975rem;
+    width:15rem;
+    background-color:#aeea00;
+    line-height:.875rem;
+    text-align:center;
+    color:#fff;
+    font-size:.65rem;
+    margin-top:1rem;
+    position:relative;
+        margin-top:.25rem;
+    margin-bottom:1rem;
+}
+.readAgree {
+        height:.975rem;
+    width:15rem;
+    background-color:#aeea00;
+    line-height:.975rem;
+    text-align:center;
+    color:#fff;
+    font-size:.65rem;
+
+}
+.btn-wrap {
+    height:1.25rem;
+    line-height:1.25rem;
+    text-align:center;
+}
+    .btn-wrap button {
+        float:left;
+        width:50%;
+        border:none;
+        color:#fff;
+        font-size:.65rem;
+        height:1.25rem;
+        line-height:1.25rem;
+        background-color:#aeea00;
+        margin-top:.25rem;
+    }
+
+
+      .agreement .checkbox {
+        position:absolute;
+        width:9rem;
+        height:.9rem;
+    }
+   .agreement  input[type=checkbox] {
+        position:absolute;
+        left:0;
+        z-index:2;   
+        filter:alpha(opacity=0); /*IE滤镜，透明度50%*/
+        -moz-opacity:0; /*Firefox私有，透明度50%*/
+        opacity:0;
+        height:100%;
+        width:100%;
+    }
+.agreement .xy {
+    display: inline-block;
+    padding-left: 1.3rem;
+}
+       .agreement  .checkbox img {
+            width:0.7rem;
+            height:0.7rem;
+            position:absolute;
+            top:0.1rem;
+            display:none;
+        }
+    .agreement .checkbox .blur{
+        display:block;
+    }
+    .agreement .checkbox input:checked+.focus {
+        display:block;
+    }
+    .agreement .checkbox input:checked~.blur {
+        display:none;
+    }

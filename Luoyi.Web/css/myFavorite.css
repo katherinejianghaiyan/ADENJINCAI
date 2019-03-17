@@ -1,0 +1,95 @@
+﻿.head-img-wrap {
+    position:relative;
+        width: 16rem;
+    height: 8rem;
+    margin-top: 2.25rem;
+}
+    .head-img-wrap .radius {
+        width:4rem;
+        height:4rem;
+        position:absolute;
+        top:1.25rem;
+        left:6rem;
+        background-color:#fff;
+        border-radius:50%;
+    }
+        .head-img-wrap .radius .head-img {
+            display:block;
+            margin:.15rem auto;
+            height:3.7rem;
+            width:3.7rem;
+            border-radius:50%;
+            text-align:center;
+        }
+        .goods-img {
+    width:16rem;
+    height:8rem;
+}
+
+section {
+    width:14rem;
+    margin:0 auto;
+    margin-bottom:2.5rem;
+    overflow:hidden;
+}
+.myList {
+    height:3.75rem;
+    border-bottom:.05rem solid #757575;
+}
+    .myList a.left {
+        display:block;
+        float:left;
+        width:4.75rem;
+        height:3.75rem;
+    }
+        .myList a.left img {
+            width:4.75rem;
+            height:2.625rem;
+            display:block;
+            margin-top:.5625rem;
+        }
+    .myList .right {
+        float:right;
+        width:8.75rem;
+        height:3.75rem;
+    }
+        .myList .right .title {
+            color:#111111;
+            font-size:.65rem;
+            margin-top:.45rem;
+            overflow:hidden;
+            line-height:1rem;
+        }
+        .myList .right .star {
+          text-align:left;
+        }
+            .myList .right .star img {
+                    height:.65rem;
+            width:3.6rem;
+            }
+        .myList .right .caozuo {
+            position:relative;
+            height:1rem;
+        }
+            .myList .right .caozuo img {
+                position:absolute;
+            }
+                .myList .right .caozuo img.addCart {
+                    right:1.75rem;
+                    bottom:0;
+                    width: 1.1rem;
+                    height: 1.1rem;
+                }
+                 .myList .right .caozuo img.favDel {
+                    right:0;
+                    bottom:.1rem;
+                        width: .9rem;
+                  height: .9rem;
+                }
+p.commentDetail {
+        height: 1.3rem;
+        overflow:hidden;
+    font-size: .5rem;
+    padding-top: .2rem;
+    
+}

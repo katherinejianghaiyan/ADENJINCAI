@@ -1,0 +1,81 @@
+﻿.goods-img
+{
+    width: 16rem;
+    height: 8rem;
+    margin-top: 2.25rem;
+}
+
+section
+{
+    width: 14.5rem;
+    margin: 0 auto 2.5rem;
+}
+
+.msg
+{
+    background-color: #aeea00;
+    color: #fff;
+    width: 13.3rem;
+    font-size: .65rem;
+    margin-top: .3rem;
+    padding: .1rem .6rem;
+}
+
+.pickUp-table
+{
+    border-bottom: .05rem solid #777777;
+    margin-top: .5rem;
+    overflow: hidden;
+    padding-bottom: .75rem;
+}
+
+    .pickUp-table .left
+    {
+        width: 14.5rem;
+    }
+
+    .pickUp-table .right
+    {
+        width: 14.5rem;
+        float: right;
+    }
+
+    .pickUp-table .left img.ywm
+    {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .pickUp-table .left p.orderName
+    {
+        text-align: center;
+        margin-top: .25rem;
+        color: #111;
+        font-size: .55rem;
+    }
+
+    .pickUp-table .right p
+    {
+        font-size: .65rem;
+        color: #111;
+        margin-top: .2rem;
+    }
+
+        .pickUp-table .right p span
+        {
+            float: right;
+        }
+.sendnews 
+{
+    height: 1.25rem;
+    line-height: 1.25rem;
+    width: 5.25rem;
+    text-align: center;
+    color: #fff;
+    background-color: #aeea00;
+    border: none;
+    font-size: .7rem;
+    float: right;
+}
+

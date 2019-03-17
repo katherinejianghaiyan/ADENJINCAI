@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C985D3FA-7094-4BA7-ABF5-BF2D08C2A348}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Luoyi.Web</RootNamespace>
+    <AssemblyName>Luoyi.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\steve.weng\Desktop\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\dll\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Comment.aspx" />
+    <Content Include="Account\Default.aspx" />
+    <Content Include="Account\MyComment.aspx" />
+    <Content Include="Account\MyFavorite.aspx" />
+    <Content Include="Account\OrderHistory.aspx" />
+    <Content Include="Account\ToPickUp.aspx" />
+    <Content Include="Account\UserInfo.aspx" />
+    <Content Include="Account\NotPickUp.aspx" />
+    <Content Include="Account\MyCoupon.aspx" />
+    <Content Include="BarCode.aspx" />
+    <Content Include="comment.html" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\OtherPages\SUZHYCFooter.ascx" />
+    <Content Include="Coupon.aspx" />
+    <Content Include="css\adenProfile\css__5JJaf2wOKFdJ1JsPS15CnMZARViQeV-CBaUpkJvLlj0__J6khNi2VHH1TryAohcw7g5AnA2Sm7dbC_srmkjDK8W4__BJGIZVe3fiQEvp5jdASXSAT2z3UBXyhgw5mdmy36onM.css" />
+    <Content Include="css\adenProfile\css__9L9IWkji3Q2ItV5F4THdp_LJTNDwUIF56GV8wkqXGK4__G_spVDDUrZi97yrR0mHxciyBQX8i86gIwPROmm4Yoc0__BJGIZVe3fiQEvp5jdASXSAT2z3UBXyhgw5mdmy36onM.css" />
+    <Content Include="css\adenProfile\css__nOqV7ITqcvCgoc6FJuMkHopgY7zk4I8k93QMwh4EgnE__hE7DjMzCHLzo9_4ksCxNqGu5JZYDCCOeZCHsoSWR_D0__BJGIZVe3fiQEvp5jdASXSAT2z3UBXyhgw5mdmy36onM.css" />
+    <Content Include="css\adenProfile\css__TMF51thUucFkt7MSxN_ZlDdiX5TMJQJ7p9B7-UaqNmM__GgBIw0eMis5NVf7Kj372g7yCe85vgH8yi9wXrm2cYgY__BJGIZVe3fiQEvp5jdASXSAT2z3UBXyhgw5mdmy36onM.css" />
+    <Content Include="css\SUZHYC.css" />
+    <Content Include="css\820LIS.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\comment.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\default.css" />
+    <Content Include="css\found.css" />
+    <Content Include="css\goodsDetail.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\mine.css" />
+    <Content Include="css\myCart.css" />
+    <Content Include="css\myCoupon.css" />
+    <Content Include="css\myFavorite.css" />
+    <Content Include="css\orderHistory.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.min.css" />
+    <Content Include="css\owl\owl.carousel.css" />
+    <Content Include="css\owl\owl.theme.css" />
+    <Content Include="css\payMent.css" />
+    <Content Include="css\pickUp.css" />
+    <Content Include="css\setting.css" />
+    <Content Include="css\swiper-3.2.7.min.css" />
+    <Content Include="css\weui.css" />
+    <Content Include="css\weui.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="default.html" />
+    <Content Include="foundDetail.html" />
+    <Content Include="goodsDetail.html" />
+    <Content Include="iconfont\demo.css" />
+    <Content Include="iconfont\demo.html" />
+    <Content Include="iconfont\iconfont.css" />
+    <Content Include="iconfont\iconfont.svg" />
+    <Content Include="img\icon\camera.png" />
+    <Content Include="img\OtherPages\120HYC\icons\adenicon.ico" />
+    <Content Include="img\OtherPages\120HYC\icons\complaint.png" />
+    <Content Include="img\OtherPages\120HYC\icons\Day1.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day2.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day3.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day4.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day5.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day6.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\Day7.jpg" />
+    <Content Include="img\OtherPages\120HYC\icons\decoration.png" />
+    <Content Include="img\OtherPages\120HYC\icons\event.png" />
+    <Content Include="img\OtherPages\120HYC\icons\fox.png" />
+    <Content Include="img\OtherPages\120HYC\icons\fox2.png" />
+    <Content Include="img\OtherPages\120HYC\icons\menu.png" />
+    <Content Include="img\OtherPages\120HYC\icons\satisfaction.png" />
+    <Content Include="img\OtherPages\120HYC\mealType\breakfast.png" />
+    <Content Include="img\OtherPages\120HYC\mealType\supper.png" />
+    <Content Include="img\OtherPages\120HYC\mealType\midnightMeal.png" />
+    <Content Include="img\OtherPages\120HYC\mealType\dinner.png" />
+    <Content Include="img\OtherPages\120HYC\mealType\lunch.png" />
+    <Content Include="img\OtherPages\120HYC\post\SUZHYC1001.jpg" />
+    <Content Include="img\OtherPages\820LIS\icons\headline.png" />
+    <Content Include="img\OtherPages\820LIS\icons\decoration.png" />
+    <Content Include="img\OtherPages\820LIS\icons\fox.png" />
+    <Content Include="img\OtherPages\820LIS\icons\fox2.png" />
+    <Content Include="img\OtherPages\820LIS\icons\5.png" />
+    <Content Include="img\OtherPages\820LIS\icons\1.png" />
+    <Content Include="img\OtherPages\820LIS\icons\4.png" />
+    <Content Include="img\OtherPages\820LIS\icons\2.png" />
+    <Content Include="img\OtherPages\820LIS\icons\3.png" />
+    <Content Include="img\coupon.jpg" />
+    <Content Include="img\coupon10.jpg" />
+    <Content Include="img\goodsList_03.jpg" />
+    <Content Include="img\icon\addCart_07.jpg" />
+    <Content Include="img\icon\arrowMenu_03.jpg" />
+    <Content Include="img\icon\cart-check-no.png" />
+    <Content Include="img\icon\cart-check-yes.png" />
+    <Content Include="img\icon\checkbox-focus.png" />
+    <Content Include="img\icon\checkbox.png" />
+    <Content Include="img\icon\cloase_03.jpg" />
+    <Content Include="img\icon\company_03.jpg" />
+    <Content Include="img\icon\coupon.png" />
+    <Content Include="img\icon\daiquhuo.png" />
+    <Content Include="img\icon\fenlei_03.png" />
+    <Content Include="img\icon\finished.png" />
+    <Content Include="img\icon\footer-cart-current.jpg" />
+    <Content Include="img\icon\footer-cart_03.jpg" />
+    <Content Include="img\icon\footer-found_03.jpg" />
+    <Content Include="img\icon\footer-index_03.jpg" />
+    <Content Include="img\icon\footer-mine_03.jpg" />
+    <Content Include="img\icon\footer-msg_03.jpg" />
+    <Content Include="img\icon\footerCart_03.png" />
+    <Content Include="img\icon\hisList_07.png" />
+    <Content Include="img\icon\history_07.png" />
+    <Content Include="img\icon\icon-btm_07.jpg" />
+    <Content Include="img\icon\icon-email_03.jpg" />
+    <Content Include="img\icon\icon-fav-active.png" />
+    <Content Include="img\icon\icon-fav-def.png" />
+    <Content Include="img\icon\icon-fav_03.jpg" />
+    <Content Include="img\icon\icon-fx_03.jpg" />
+    <Content Include="img\icon\icon-head-img_03.jpg" />
+    <Content Include="img\icon\icon-job_03.jpg" />
+    <Content Include="img\icon\icon-mine-com_03.jpg" />
+    <Content Include="img\icon\icon-mine-get_03.jpg" />
+    <Content Include="img\icon\icon-mine-pick_03.jpg" />
+    <Content Include="img\icon\icon-name_03.jpg" />
+    <Content Include="img\icon\icon-phone_03.jpg" />
+    <Content Include="img\icon\icon-potion_2.jpg" />
+    <Content Include="img\icon\icon-setting_03.jpg" />
+    <Content Include="img\icon\icon-trash.png" />
+    <Content Include="img\icon\icon-user.jpg" />
+    <Content Include="img\icon\icon-weight_07.jpg" />
+    <Content Include="img\icon\itOk_03.png" />
+    <Content Include="img\icon\menublock2_03.jpg" />
+    <Content Include="img\icon\menublock3_03.jpg" />
+    <Content Include="img\icon\menublock_03.jpg" />
+    <Content Include="img\icon\menublock_03_03.jpg" />
+    <Content Include="img\icon\myAss_07.png" />
+    <Content Include="img\icon\myFav_07.png" />
+    <Content Include="img\icon\icon-potion_1.jpg" />
+    <Content Include="img\icon\noAss_03.png" />
+    <Content Include="img\icon\noPay_03.png" />
+    <Content Include="img\icon\noPickUp_03.png" />
+    <Content Include="img\icon\rightArrow_07.png" />
+    <Content Include="img\icon\search_03.png" />
+    <Content Include="img\icon\star-blur_03.png" />
+    <Content Include="img\icon\star-focus_03.png" />
+    <Content Include="img\icon\star_1_03.jpg" />
+    <Content Include="img\icon\star_2_03.jpg" />
+    <Content Include="img\icon\star_3_03.jpg" />
+    <Content Include="img\icon\star_4_03.jpg" />
+    <Content Include="img\icon\star_5_03.jpg" />
+    <Content Include="img\icon\white_03.jpg" />
+    <Content Include="img\imgLine.jpg" />
+    <Content Include="img\ItemImgs\lis_ENUS.jpg" />
+    <Content Include="img\login_img_02.jpg" />
+    <Content Include="img\mine-bg.jpg" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\OtherPages\SUZLOR\flavor1129.jpg" />
+    <Content Include="img\SiteImgs\load_lis.jpg" />
+    <Content Include="img\SiteImgs\load_yfp.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="Item.aspx" />
+    <Content Include="ItemDetail.aspx" />
+    <Content Include="ItemSetDetail.aspx" />
+    <Content Include="js\autoWindow.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Camera.js" />
+    <Content Include="js\cart.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\owl\jquery.min.js" />
+    <Content Include="js\owl\owl.carousel.js" />
+    <Content Include="js\owl\owl.carousel.min.js" />
+    <Content Include="js\swiper-3.2.7.min.js" />
+    <Content Include="js\touchSlide.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="login.html" />
+    <Content Include="mine.html" />
+    <Content Include="MyCart.aspx" />
+    <Content Include="myCart.html" />
+    <Content Include="myComment.html" />
+    <Content Include="myFavorite.html" />
+    <Content Include="orderHistory.html" />
+    <Content Include="OtherPages\ADENProfile.aspx" />
+    <Content Include="OtherPages\ADENProfile\AdenProfileCn.htm" />
+    <Content Include="OtherPages\ADENProfile\AdenProfileEn.htm" />
+    <Content Include="OtherPages\Events\SUZHYC.aspx" />
+    <Content Include="OtherPages\Comments\SUZHYC.aspx" />
+    <Content Include="OtherPages\Menus\SUZLOR.aspx" />
+    <Content Include="OtherPages\Menus\SUZHYC.aspx" />
+    <Content Include="OtherPages\Menus\820LIS.aspx" />
+    <Content Include="PayMent.aspx" />
+    <Content Include="payMent.html" />
+    <Content Include="pickUp.html" />
+    <Content Include="Plugin\Payment\AliPay\Alipay.aspx" />
+    <Content Include="Plugin\Payment\AliPay\AlipayNotify.aspx" />
+    <Content Include="Plugin\Payment\AliPay\AlipayReturn.aspx" />
+    <Content Include="Plugin\Payment\Cash\CashNotify.aspx" />
+    <Content Include="Plugin\Payment\WxPay\WxpayNotify.aspx" />
+    <Content Include="setting.html" />
+    <Content Include="Survey\SiteSurvey.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Comment.aspx.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Comment.aspx.designer.cs">
+      <DependentUpon>Comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyComment.aspx.cs">
+      <DependentUpon>MyComment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyComment.aspx.designer.cs">
+      <DependentUpon>MyComment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyFavorite.aspx.cs">
+      <DependentUpon>MyFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyFavorite.aspx.designer.cs">
+      <DependentUpon>MyFavorite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ToPickUp.aspx.cs">
+      <DependentUpon>ToPickUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ToPickUp.aspx.designer.cs">
+      <DependentUpon>ToPickUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\NotPickUp.aspx.cs">
+      <DependentUpon>NotPickUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\NotPickUp.aspx.designer.cs">
+      <DependentUpon>NotPickUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyCoupon.aspx.cs">
+      <DependentUpon>MyCoupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyCoupon.aspx.designer.cs">
+      <DependentUpon>MyCoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\BarCode.ashx.cs">
+      <DependentUpon>BarCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\CartAdd.ashx.cs">
+      <DependentUpon>CartAdd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Favorite.ashx.cs">
+      <DependentUpon>Favorite.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\GetOrderID.ashx.cs">
+      <DependentUpon>GetOrderID.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\CartQty.ashx.cs">
+      <DependentUpon>CartQty.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Item.ashx.cs">
+      <DependentUpon>Item.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\OfficalAccountQRCode.ashx.cs">
+      <DependentUpon>OfficalAccountQRCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\SendWeiXin.ashx.cs">
+      <DependentUpon>SendWeiXin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\Survey.ashx.cs">
+      <DependentUpon>Survey.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\UserEdit.ashx.cs">
+      <DependentUpon>UserEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\WeiXin.ashx.cs">
+      <DependentUpon>WeiXin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\CartIsBuy.ashx.cs">
+      <DependentUpon>CartIsBuy.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\WxBarCode.ashx.cs">
+      <DependentUpon>WxBarCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\WxMessage.ashx.cs">
+      <DependentUpon>WxMessage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BarCode.aspx.cs">
+      <DependentUpon>BarCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarCode.aspx.designer.cs">
+      <DependentUpon>BarCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\HtmlLang.cs" />
+    <Compile Include="Code\LanguageExpression.cs" />
+    <Compile Include="Code\SysConfig.cs" />
+    <Compile Include="Controls\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OtherPages\SUZHYC.Master.cs">
+      <DependentUpon>SUZHYC.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OtherPages\SUZHYC.Master.designer.cs">
+      <DependentUpon>SUZHYC.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OtherPages\SUZHYCFooter.ascx.cs">
+      <DependentUpon>SUZHYCFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\OtherPages\SUZHYCFooter.ascx.designer.cs">
+      <DependentUpon>SUZHYCFooter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Coupon.aspx.cs">
+      <DependentUpon>Coupon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Coupon.aspx.designer.cs">
+      <DependentUpon>Coupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Item.aspx.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Item.aspx.designer.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDetail.aspx.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemDetail.aspx.designer.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSetDetail.aspx.cs">
+      <DependentUpon>ItemSetDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemSetDetail.aspx.designer.cs">
+      <DependentUpon>ItemSetDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart.aspx.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCart.aspx.designer.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\ADENProfile.aspx.cs">
+      <DependentUpon>ADENProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\ADENProfile.aspx.designer.cs">
+      <DependentUpon>ADENProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\Events\SUZHYC.aspx.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\Events\SUZHYC.aspx.designer.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\Comments\SUZHYC.aspx.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\Comments\SUZHYC.aspx.designer.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\Menus\SUZLOR.aspx.cs">
+      <DependentUpon>SUZLOR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\Menus\SUZLOR.aspx.designer.cs">
+      <DependentUpon>SUZLOR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\Menus\SUZHYC.aspx.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\Menus\SUZHYC.aspx.designer.cs">
+      <DependentUpon>SUZHYC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OtherPages\Menus\820LIS.aspx.cs">
+      <DependentUpon>820LIS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OtherPages\Menus\820LIS.aspx.designer.cs">
+      <DependentUpon>820LIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayMent.aspx.cs">
+      <DependentUpon>PayMent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayMent.aspx.designer.cs">
+      <DependentUpon>PayMent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\AlipayConfig.cs" />
+    <Compile Include="Plugin\Payment\AliPay\AlipayCore.cs" />
+    <Compile Include="Plugin\Payment\AliPay\AlipayMD5.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\AlipayNotify.cs" />
+    <Compile Include="Plugin\Payment\AliPay\AlipaySubmit.cs" />
+    <Compile Include="Plugin\Payment\AliPay\Alipay.aspx.cs">
+      <DependentUpon>Alipay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\Alipay.aspx.designer.cs">
+      <DependentUpon>Alipay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\AlipayNotify.aspx.cs">
+      <DependentUpon>AlipayNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\AlipayReturn.aspx.cs">
+      <DependentUpon>AlipayReturn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plugin\Payment\AliPay\AlipayReturn.aspx.designer.cs">
+      <DependentUpon>AlipayReturn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\Payment\Cash\CashNotify.aspx.cs">
+      <DependentUpon>CashNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plugin\Payment\Cash\CashNotify.aspx.designer.cs">
+      <DependentUpon>CashNotify.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin\Payment\WxPay\WxpayNotify.aspx.cs">
+      <DependentUpon>WxpayNotify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Survey\SiteSurvey.aspx.cs">
+      <DependentUpon>SiteSurvey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey\SiteSurvey.aspx.designer.cs">
+      <DependentUpon>SiteSurvey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\AjaxJsonInfo.cs" />
+    <Compile Include="Utility\CalendarsHelper.cs" />
+    <Compile Include="Utility\CartHelper.cs" />
+    <Compile Include="Utility\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utility\UserHelper.cs" />
+    <Compile Include="Utility\WxConfigInfo.cs" />
+    <Compile Include="Utility\WxMessageHelper.cs" />
+    <Compile Include="Utility\CouponHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\Default.Master" />
+    <Content Include="Config\log4net.config" />
+    <Content Include="Settings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="api\GetOrderID.ashx" />
+    <Content Include="api\CartAdd.ashx" />
+    <Content Include="api\CartQty.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="iconfont\iconfont.eot" />
+    <Content Include="iconfont\iconfont.ttf" />
+    <Content Include="iconfont\iconfont.woff" />
+    <Content Include="api\Favorite.ashx" />
+    <Content Include="api\BarCode.ashx" />
+    <Content Include="api\WeiXin.ashx" />
+    <Content Include="api\CartIsBuy.ashx" />
+    <Content Include="api\Item.ashx" />
+    <Content Include="api\UserEdit.ashx" />
+    <Content Include="api\WxBarCode.ashx" />
+    <Content Include="api\SendWeiXin.ashx" />
+    <Content Include="api\WxMessage.ashx" />
+    <Content Include="css\owl\owl.aden.css" />
+    <Content Include="Controls\OtherPages\SUZHYC.Master" />
+    <Content Include="api\Survey.ashx" />
+    <Content Include="api\OfficalAccountQRCode.ashx" />
+    <None Include="Properties\PublishProfiles\jc.pubxml" />
+    <Content Include="sandbox.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Luoyi.BLL\Luoyi.BLL.csproj">
+      <Project>{b8d31257-60c4-4f37-8fa0-3478f796ff14}</Project>
+      <Name>Luoyi.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luoyi.Common\Luoyi.Common.csproj">
+      <Project>{54295b5d-88b0-446c-b7f3-367a9dd358b1}</Project>
+      <Name>Luoyi.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luoyi.Config\Luoyi.Config.csproj">
+      <Project>{f076603f-4f4c-4843-acb7-033b010469ee}</Project>
+      <Name>Luoyi.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luoyi.DAL\Luoyi.DAL.csproj">
+      <Project>{25AF5FBD-D91A-4470-83F8-F67767D1EAD3}</Project>
+      <Name>Luoyi.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Luoyi.Entity\Luoyi.Entity.csproj">
+      <Project>{decdc319-8dd8-46c4-a775-5561be20c73d}</Project>
+      <Name>Luoyi.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Senparc.Weixin.MP.Sample.CommonService\Senparc.Weixin.MP.Sample.CommonService.csproj">
+      <Project>{ccd291e9-16fa-4b53-b032-ebd3f659567b}</Project>
+      <Name>Senparc.Weixin.MP.Sample.CommonService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Senparc.Weixin.MP\Senparc.Weixin.MP.csproj">
+      <Project>{1d815fbf-451c-4e23-939c-cb80172f445c}</Project>
+      <Name>Senparc.Weixin.MP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Senparc.Weixin\Senparc.Weixin.csproj">
+      <Project>{814092cd-9cd0-4fb7-91e8-d147f476f1fb}</Project>
+      <Name>Senparc.Weixin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="img\images\" />
+    <Folder Include="itemimages\" />
+    <Folder Include="logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1281</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Luoyi.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

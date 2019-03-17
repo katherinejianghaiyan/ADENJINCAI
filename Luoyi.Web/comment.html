@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>评价</title>
+    <link href="/css/common.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/comment.css" rel="stylesheet" />
+    <script src="/js/autoWindow.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+    <script>
+        $(function () {
+            var $starWrap = $('.starWrap'); //评价星级
+            $starWrap.on('click', 'img', function () {
+                $(this).nextAll('img').attr("src", "/img/icon/star-blur_03.png");
+                $(this).attr('src', '/img/icon/star-focus_03.png').prevAll('img').attr('src', '/img/icon/star-focus_03.png');
+            });
+
+            $('.commentText').on('change','textarea',function () {  //监听文本域输入长度
+                var length = $(this).val().length;
+                var $num = $(this).siblings('.wordNum').find('.num');
+                $num.text(length);
+                if(length>=30){
+                    alert('评价字数请在30个以内！');
+                }
+            });
+        })
+      </script>
+
+<body class="container">
+    <!--------头部--------->
+    <header>
+        <a class="return" href="javascript:window.history.back(-1)"></a>
+        <span class="title">评价</span>
+        <img class="search" src="/img/icon/search_03.png" />
+        <span class="language">English</span>
+    </header>
+
+    <!----------主体---------->
+    <section>
+        <!--评论-->
+        <div class="commentWrap">
+            <p class="title">宫保鸡丁</p>
+            <div class="grade">
+                <span>请为他打分</span>
+                <p class="starWrap"><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/></p>
+            </div>
+            <div class="commentText">
+                <p class="wordNum">（<span class="num">0</span>/30）</p>
+                <textarea maxlength="30" placeholder="请写下您的评价"></textarea>
+                <p class="icon"><img src="/img/icon/white_03.jpg"/></p>
+            </div>
+            <div class="btnGroup">
+                <button>取消</button>
+                <button>提交</button>
+            </div>
+        </div>
+
+        <!--评论-->
+        <div class="commentWrap">
+            <p class="title">宫保鸡丁</p>
+            <div class="grade">
+                <span>请为他打分</span>
+                <p class="starWrap"><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/></p>
+            </div>
+            <div class="commentText">
+                <p class="wordNum">（<span class="num">0</span>/30）</p>
+                <textarea maxlength="30" placeholder="请写下您的评价"></textarea>
+                <p class="icon"><img src="/img/icon/white_03.jpg"/></p>
+            </div>
+            <div class="btnGroup">
+                <button>取消</button>
+                <button>提交</button>
+            </div>
+        </div>
+
+        <!--评论-->
+        <div class="commentWrap">
+            <p class="title">宫保鸡丁</p>
+            <div class="grade">
+                <span>请为他打分</span>
+                <p class="starWrap"><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/><img src="/img/icon/star-blur_03.png"/></p>
+            </div>
+            <div class="commentText">
+                <p class="wordNum">（<span class="num">0</span>/30）</p>
+                <textarea maxlength="30" placeholder="请写下您的评价"></textarea>
+                <p class="icon"><img src="/img/icon/white_03.jpg"/></p>
+            </div>
+            <div class="btnGroup">
+                <button>取消</button>
+                <button>提交</button>
+            </div>
+        </div>
+
+    </section>
+
+ <!--------底部--------->
+    <footer>
+        <ul>
+            <li class="current">
+                <a href="default.html">
+                    <p>
+                        <i class="iconfont">&#xe61d;</i>
+                    </p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <p>
+                        <i class="iconfont">&#xe60a;</i>
+                    </p>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li><a href="myCart.html">
+                <p>
+                    <img src="/img/icon/footer-cart_03.jpg" />
+                    <span class="numCart">1</span>
+                </p>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <p>
+                    <i class="iconfont">&#xe602;    </i>
+                </p>
+                <p>发现</p>
+            </a></li>
+            <li>
+                <a href="mine.html">
+                    <p>
+                        <i class="iconfont">&#xe63f;</i>
+                    </p>
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

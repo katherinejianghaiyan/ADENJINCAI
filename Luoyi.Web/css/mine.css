@@ -1,0 +1,117 @@
+﻿.goods-img {
+    width:16rem;
+    height:8rem;
+}
+section {
+    margin-top:0 !important;
+    padding-top:.5rem;
+    width:14rem !important;
+    margin:0 auto 3rem;
+}
+.head-img-wrap {
+    position:relative;
+        width: 16rem;
+    height: 8rem;
+    margin-top: 2.25rem;
+}
+    .head-img-wrap .radius {
+        width:4rem;
+        height:4rem;
+        position:absolute;
+        top:1.25rem;
+        left:6rem;
+        background-color:#fff;
+        border-radius:50%;
+    }
+        .head-img-wrap .radius .head-img {
+            display:block;
+            margin:0rem auto;
+            height:4rem;
+            width:4rem;
+            border-radius:50%;
+            text-align:center;
+        }
+section .menuList {
+    display:box;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-o-box;
+    width:100%;
+    height:3.25rem;
+            border-bottom:.05rem solid #757575;
+            margin-bottom:.5rem;
+}
+    section .menuList li {
+        box-flex:1;
+        -webkit-box-flex:1;
+        -moz-box-flex:1;
+        -o-box-flex:1;
+        height:3.25rem;
+        text-align:center;
+    }
+section .menuList li span.num{
+        height: .75rem;
+    width: .75rem;
+    background-color: hsl(75, 100%, 46%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: .75rem;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+        top: -0.2rem;
+    right: 1.3rem;
+    font-size: .6rem;
+}
+        section .menuList li img:nth-child(1){
+            width:1.075rem;
+            height:0.925rem;
+        }
+         section .menuList li img:nth-child(2){
+            width:1.275rem;
+            height:0.925rem;
+        }
+          section .menuList li img:nth-child(3){
+            width:0.925rem;
+            height:0.925rem;
+        }
+        section .menuList li a {
+            display:block;
+            font-size:.65rem;
+            color:#111;
+            position:relative;
+        }
+        section .menuList li img {
+            display:block;
+            margin:0.45rem auto .275rem;
+        }
+.menuBlock {
+    display:block;
+    height:1.25rem;
+    margin-top:.25rem;
+    width:14rem;
+    background-color:#aeea00;
+    color:#FFF;
+    line-height:1.25rem;
+    font-size:.65rem;
+}
+    .menuBlock img:nth-child(1) {
+        padding-left:.375rem;
+        vertical-align:middle;
+           height:.675rem;
+    width:.85rem;
+    }
+    .menuBlock span:nth-child(2) {
+        padding-left:1rem;
+    }
+     .menuBlock img:nth-child(3) {
+        float:right;
+        display:block;
+        margin-top:.5rem;
+        margin-right:.7rem;
+        width: .575rem;
+        height: .275rem;
+    }
+.menuWrap .menuBlock:nth-child(1) img:nth-child(1){
+     height:.9rem !important;
+}

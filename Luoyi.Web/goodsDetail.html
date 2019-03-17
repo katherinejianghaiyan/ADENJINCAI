@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>商品详情</title>
+    <link href="/css/common.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/goodsDetail.css" rel="stylesheet" />
+    <script src="/js/autoWindow.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+     <script>
+         $(function () {    
+             $('.circle').each(function (index, el) {   //环形进度条
+                 var num = $(this).find('span').text() * 3.6;
+                 if (num <= 180) {
+                     $(this).find('.right').css({
+                         'transform': "rotate(" + num + "deg)",
+                         '-webkit-transform': "rotate(" + num + "deg)",
+                         '-moz-transform': "rotate(" + num + "deg)",
+                         '-o-transform': "rotate(" + num + "deg)"
+                     });
+                 } else {
+                     $(this).find('.right').css({
+                         'transform': "rotate(180deg)",
+                         '-webkit-transform': "rotate(180deg)",
+                         '-moz-transform': "rotate(180deg)",
+                         '-o-transform': "rotate(180deg)",
+                     });
+                     $(this).find('.left').css({
+                         'transform': "rotate(" + (num - 180) + "deg)",
+                         '-webkit-transform': "rotate(" + (num - 180) + "deg)",
+                         '-moz-transform': "rotate(" + (num - 180) + "deg)",
+                         '-o-transform': "rotate(" + (num - 180) + "deg)",
+                     });
+                 };
+             });
+
+             $('.product').on('click', '.title li:not(current)', function () {//tabs切换
+                 var thisIndex = $(this).index();
+                 var $current = $(this).siblings('.current');
+                 var $content = $('.product');
+
+                 $current.stop();
+                 switch (thisIndex) {
+                     case 1: $content.find('div.proInfo').show().siblings('div.commentDiv').hide(); $current.animate({ left: '0' }, 500); break;
+                     case 2: $content.find('div.commentDiv').show().siblings('div.proInfo').hide(); $current.animate({ left: '50%' }, 500); break;
+                 }
+             });
+
+             $('.goods-price').on('click', 'img.fav', function () {
+                 if (!$(this).hasClass('active')) {
+                     $(this).prop('src', '/img/icon/icon-fav-active.png').addClass('active');
+                     alert('收藏成功！');
+                 } else {
+                     $(this).prop('src', '/img/icon/icon-fav-def.png').removeClass('active');
+                     alert('取消收藏成功！');
+                 }
+             });
+
+         });
+    </script>
+<body class="container">
+
+    <!--------头部--------->
+    <header>
+        <a class="return" href="javascript:window.history.back(-1)"></a>
+        <span class="title">个人中心</span>
+        <img class="search" src="/img/icon/search_03.png" />
+        <span class="language">English</span>
+    </header>
+
+    <div class="head-img-wrap">
+        <img class="goods-img" src="/img/mine-bg.jpg" />
+    </div>
+    <!----------主体---------->
+
+    <section>
+       <p class="goods-name">红烧肉</p>
+       <p class="goods-sku">
+                <span class="sku">
+                    <img src="/img/icon/icon-piece_06.jpg"/><small>2-3PPL</small>
+                </span>
+                <span  class="addCart">
+                    <img src="/img/icon/addCart_07.jpg"/>
+                </span>
+       </p>
+       <p class="msg">
+           不推荐心脏病患者
+       </p>
+       <p class="msg">
+           上午11点前下单当天取货
+       </p>
+
+        <div class="goods-price">
+            <p class="price">
+                <span>￥39</span>
+                <img class="fx" src="/img/icon/icon-fx_03.jpg"/>
+                <img class="fav" src="/img/icon/icon-fav-def.png"/>
+            </p>
+             <p class="comment">
+                 <span>评价：</span>
+                 <img class="star" src="/img/icon/star_5_03.jpg"/>
+                 <span>评论：</span>
+                 <span>99</span>
+             </p>
+        </div>
+
+        <p class="summary">
+            富含蛋白质,钙,磷,铁,维生素及碳水化合物等营养成分,具有温
+            中益气,滋补五脏,健脾胃,壮筋骨的功效。食之可养身滋补,增进
+            食欲,促进人体健康,增强机体抵抗能力。
+        </p>
+
+        <!----产品信息和评论----->
+        <div class="product">
+            <ul class="title">  
+                <li class="current"></li>
+                <li>产品信息</li>
+                <li>评论</li>
+            </ul>
+
+            <!---产品信息--->
+            <div class="proInfo">
+                <p class="imgLine">
+                    <img src="/img/imgLine.jpg"/>
+                    <img src="/img/imgLine.jpg"/>
+                </p>
+
+                <p class="numWeight">
+                    <span class="num">95</span>Kcal/100G
+                </p>
+                <!--环形进度表--->
+                <ul class="scale">
+
+
+                    <li>
+                       <div class="circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask"><span>11</span>g</div>
+                        </div>
+
+                        <p class="circle-p">脂肪</p>
+                    </li>
+                     <li>
+                       <div class="circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask"><span>9.7</span>g</div>
+                        </div>
+
+                        <p class="circle-p">蛋白质</p>
+                    </li>
+                     <li>
+                       <div class="circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask"><span>4.1</span>g</div>
+                        </div>
+
+                        <p class="circle-p">碳水化合物</p>
+                    </li>
+                     <li>
+                       <div class="circle">
+                            <div class="pie_left"><div class="left"></div></div>
+                            <div class="pie_right"><div class="right"></div></div>
+                            <div class="mask"><span>3.9</span>g</div>
+                        </div>
+
+                        <p class="circle-p">膳食纤维</p>
+                    </li>
+                </ul>
+
+
+                <!--成分-->
+                <p class="constituents-title">成分</p>
+                <ul class="constituents-content">
+                    <li><span>鸡肉</span><span>120g</span></li>
+                    <li><span>花生</span><span>120g</span></li>
+                    <li><span>鸡肉</span><span>120g</span></li>
+                    <li><span>鸡肉</span><span>120g</span></li>
+                    <li><span>鸡肉</span><span>120g</span></li>
+                </ul>
+
+                  <!--烹饪步骤-->
+                <p class="step">烹饪步骤<span>1</span></p>
+                <p class="stepDetail">起锅放少许油,加入肉丁炒至断血水到出。</p>
+
+                <p class="step">烹饪步骤<span>2</span></p>
+                <p class="stepDetail">起锅放少许油,加入肉丁炒至断血水到出起锅放少许油,加入肉丁炒至断血水到出起锅放少许油,加入肉丁炒至断血水到出起锅放少许油,加入肉丁炒至断血水到出。</p>
+
+                <p class="step">烹饪步骤<span>3</span></p>
+                <p class="stepDetail">起锅放少许油,加入肉丁炒至断血水到出。</p>
+
+                <p class="step">烹饪步骤<span>4</span></p>
+                <p class="stepDetail">起锅放少许油,加入肉丁炒至断血水到出。</p>
+                <!---评论--->
+            </div>
+
+          
+            <div class="commentDiv">
+                <p class="comment">
+                     <span>好评率：</span>
+                     <img class="star" src="/img/icon/star_4_03.jpg"/>
+                     <span>平均分数：</span>
+                     <span>4.5</span>
+                    <span class="fr">
+                         <span>评论：</span>
+                         <span>99</span>
+                    </span>
+                </p>
+
+                <div class="commentList">
+                   <p class="title">
+                       <img src="/img/icon/icon-user.jpg"/>
+                       <span class="name">Jeff</span>
+                       <span class="fr time">2016-10-20</span>
+                       <span class="fr">评分：4</span>
+                   </p>
+                   <p class="content">
+                       非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！
+                   </p>
+                </div>
+
+
+                 <div class="commentList">
+                   <p class="title">
+                       <img src="/img/icon/icon-user.jpg"/>
+                       <span class="name">Jeff</span>
+                       <span class="fr time">2016-10-20</span>
+                       <span class="fr">评分：4</span>
+                   </p>
+                   <p class="content">
+                       非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！
+                   </p>
+                </div>
+
+
+                 <div class="commentList">
+                   <p class="title">
+                       <img src="/img/icon/icon-user.jpg"/>
+                       <span class="name">Jeff</span>
+                       <span class="fr time">2016-10-20</span>
+                       <span class="fr">评分：4</span>
+                   </p>
+                   <p class="content">
+                       非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！
+                   </p>
+                </div>
+
+
+                 <div class="commentList">
+                   <p class="title">
+                       <img src="/img/icon/icon-user.jpg"/>
+                       <span class="name">Jeff</span>
+                       <span class="fr time">2016-10-20</span>
+                       <span class="fr">评分：4</span>
+                   </p>
+                   <p class="content">
+                       非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！非常好吃！！
+                   </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="smile">
+            <img src="/img/icon/icon-btm_07.jpg"/>
+        </div>
+
+    </section>
+   
+
+   <!--------底部--------->
+    <footer>
+        <ul>
+            <li class="current">
+                <a href="default.html">
+                    <p>
+                        <i class="iconfont">&#xe61d;</i>
+                    </p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <p>
+                        <i class="iconfont">&#xe60a;</i>
+                    </p>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li><a href="myCart.html">
+                <p>
+                    <img src="/img/icon/footer-cart_03.jpg" />
+                    <span class="numCart">1</span>
+                </p>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <p>
+                    <i class="iconfont">&#xe602;    </i>
+                </p>
+                <p>发现</p>
+            </a></li>
+            <li>
+                <a href="mine.html">
+                    <p>
+                        <i class="iconfont">&#xe63f;</i>
+                    </p>
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

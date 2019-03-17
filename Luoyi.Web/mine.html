@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人中心</title>
+    <link href="/css/common.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/mine.css" rel="stylesheet" />
+    <script src="/js/autoWindow.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+        <script>
+            $(function () {
+                var $form = $('.seaForm');
+                var $seaBtn = $('.search');
+                var $area = $('.searchText');
+                $seaBtn.on('click', function () {
+                    $form.toggle();
+                    $area.focus();
+                });
+                $area.on('blur', function () {
+                    $form.hide();
+                });
+            })
+
+        </script>
+<body class="container">
+    <!--------头部--------->
+    <header>
+        <span class="title">个人中心</span>
+        <form class="seaForm" action="http://www.baidu.com"><input class="searchText" type="search" placeholder="搜索值"/></form>
+        <img class="search" src="/img/icon/search_03.png" />
+        <span class="language">English</span>
+    </header>
+
+    <div class="head-img-wrap">
+        <img class="goods-img" src="/img/mine-bg.jpg" />
+        <div class="radius">
+            <img src="/img/goodsList_03.jpg" class="head-img"/>
+        </div>
+    </div>
+    <!----------主体---------->
+    <section>
+        <ul class="menuList">
+            <li>
+                <a href="pickUp.html">
+                   <img src="/img/icon/icon-mine-get_03.jpg"/>
+                    <p>取货</p>
+                    <span class="num">1</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                   <img src="/img/icon/daiquhuo.png"/>
+                    <p>未取货</p>
+                    <span class="num">1</span>
+                </a>
+            </li>
+            <li>
+                <a href="comment.html">
+                   <img src="/img/icon/icon-mine-com_03.jpg"/>
+                    <p>评论</p>
+                    <span class="num">1</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="menuWrap">
+         <a class="menuBlock" href="orderHistory.html">
+            <img src="/img/icon/finished.png" />
+            <span>已完成</span>
+            <img src="/img/icon/arrowMenu_03.jpg" />
+        </a>
+        <a class="menuBlock" href="myFavorite.html">
+            <img src="/img/icon/menublock_03.jpg" />
+            <span>我的收藏</span>
+            <img src="/img/icon/arrowMenu_03.jpg" />
+        </a>
+        <a class="menuBlock" href="myComment.html">
+             <img src="/img/icon/menublock_03_03.jpg" />
+            <span>我的评论</span>
+            <img src="/img/icon/arrowMenu_03.jpg" />
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <img src="/img/icon/menublock2_03.jpg" />
+            <span>客户服务</span>
+            <img src="/img/icon/arrowMenu_03.jpg" />
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <img src="/img/icon/menublock3_03.jpg" />
+            <span>地址</span>
+            <img src="/img/icon/arrowMenu_03.jpg" />
+        </a>
+        </div>
+    </section>
+
+
+
+    <!--------底部--------->
+    <footer>
+        <ul>
+            <li>
+                <a href="default.html">
+                    <p>
+                        <i class="iconfont">&#xe61d;</i>
+                    </p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <p>
+                        <i class="iconfont">&#xe60a;</i>
+                    </p>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li><a href="myCart.html">
+                <p>
+                    <img src="/img/icon/footer-cart_03.jpg" />
+                    <span class="numCart">1</span>
+                </p>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <p>
+                    <i class="iconfont">&#xe602;    </i>
+                </p>
+                <p>发现</p>
+            </a></li>
+            <li>
+                <a href="mine.html">
+                    <p>
+                        <i class="iconfont">&#xe63f;</i>
+                    </p>
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

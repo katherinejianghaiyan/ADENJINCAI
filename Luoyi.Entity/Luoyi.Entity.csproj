@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DECDC319-8DD8-46C4-A775-5561BE20C73D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Luoyi.Entity</RootNamespace>
+    <AssemblyName>Luoyi.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalendarsInfo.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="MealDateList.cs" />
+    <Compile Include="MealTypeList.cs" />
+    <Compile Include="Filtration\PageFilter.cs" />
+    <Compile Include="Filtration\SaleOrderFilter.cs" />
+    <Compile Include="Filtration\ItemFilter.cs" />
+    <Compile Include="ItemCustomClassInfo.cs" />
+    <Compile Include="NutritionList.cs" />
+    <Compile Include="NutritionWeekDay.cs" />
+    <Compile Include="NutritionInfo.cs" />
+    <Compile Include="PostPic.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BUInfo.cs" />
+    <Compile Include="DictInfo.cs" />
+    <Compile Include="ItemInfo.cs" />
+    <Compile Include="ItemBomInfo.cs" />
+    <Compile Include="ItemClassInfo.cs" />
+    <Compile Include="ItemPriceInfo.cs" />
+    <Compile Include="ItemProperyInfo.cs" />
+    <Compile Include="ItemSupplierInfo.cs" />
+    <Compile Include="PromotedItemInfo.cs" />
+    <Compile Include="PromotionInfo.cs" />
+    <Compile Include="PurchaseOrderInfo.cs" />
+    <Compile Include="PurchaseOrderItemInfo.cs" />
+    <Compile Include="SaleOrderInfo.cs" />
+    <Compile Include="SaleOrderCartInfo.cs" />
+    <Compile Include="SaleOrderItemInfo.cs" />
+    <Compile Include="SaleOrderUserInfo.cs" />
+    <Compile Include="SiteAddrs.cs" />
+    <Compile Include="SiteInfo.cs" />
+    <Compile Include="SiteAdminInfo.cs" />
+    <Compile Include="StockTransactionInfo.cs" />
+    <Compile Include="SupplierInfo.cs" />
+    <Compile Include="SupplierSiteInfo.cs" />
+    <Compile Include="SurveyDetails.cs" />
+    <Compile Include="SurveyInfo.cs" />
+    <Compile Include="UOMInfo.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserCommentInfo.cs" />
+    <Compile Include="UserFavoriteInfo.cs" />
+    <Compile Include="LangInfo.cs" />
+    <Compile Include="CouponInfo.cs" />
+    <Compile Include="CouponTicketInfo.cs" />
+    <Compile Include="CouponRuleInfo.cs" />
+    <Compile Include="UserCouponInfo.cs" />
+    <Compile Include="CouponReleaseInfo.cs" />
+    <Compile Include="WechatConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Luoyi.Common\Luoyi.Common.csproj">
+      <Project>{54295b5d-88b0-446c-b7f3-367a9dd358b1}</Project>
+      <Name>Luoyi.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

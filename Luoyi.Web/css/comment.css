@@ -1,0 +1,101 @@
+﻿section {
+    width:14rem !important;
+}
+.commentWrap {
+    width:14rem;
+    overflow:hidden;
+    border-bottom:.05rem solid #cccccc
+}
+    .commentWrap .title {
+        font-size:.8rem;
+        color:#000000;
+        margin-top:.5rem;
+    }
+.commentWrap .grade {
+    font-size:.65rem;
+    color:#999999;
+    margin-top:.3rem;
+    overflow:hidden;
+    line-height:1rem;
+}
+    .commentWrap .starWrap {
+        float:right;
+    }
+        .commentWrap .starWrap img {
+            width:.95rem;
+            height:.975rem;
+            padding:0 .1rem;
+        }
+.commentText {
+    width:14rem;
+    background-color:#aeea00;
+    overflow:hidden;
+}
+    .commentText .wordNum {
+        height:1rem;
+        text-align:right;
+        line-height:1rem;
+        color:#21441e;
+        font-size:.45rem;
+        padding-right:.5rem;
+    }
+    .commentText textarea {
+        height:1.5rem;
+        width:13.6rem;
+        border:none;
+        background-color:#aeea00;
+        resize:none;
+         color:#21441e;
+        font-size:.55rem;
+        padding:0.1rem .2rem;
+        outline:none;
+    }
+.commentText :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #21441e;  
+}
+
+.commentText::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #21441e;
+}
+
+.commentText
+textarea:-ms-input-placeholder {
+    color: #21441e;
+}
+
+.commentText
+textarea::-webkit-input-placeholder {
+    color: #21441e;
+}
+    .commentText .icon {
+        text-align:right;
+    }
+        .commentText .icon img {
+            height:1.3rem;
+            width:1.3rem;
+            padding-right:.5rem;
+        }
+.commentWrap .btnGroup {
+    height:1.375rem;
+    width:14rem;
+    margin-top:.25rem;
+    margin-bottom:.5rem;
+}
+    .commentWrap .btnGroup .button {
+        width:7rem;
+        float:left;
+        height:1.375rem;
+        line-height:1.375rem;
+        text-align:left;
+        border:none;
+        color:#fff;
+        font-size:.65rem;
+            background-color:#aeea00;
+    }
+        .commentWrap .btnGroup .button:first-child {
+            text-indent:.5rem;
+        }
+          .commentWrap .btnGroup .button:last-child {
+            text-align:right;
+            padding-right:.5rem;
+        }

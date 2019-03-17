@@ -1,0 +1,295 @@
+﻿body, html
+{
+    min-height: 100%;
+}
+
+.container
+{
+    max-width: 16rem;
+    min-width: 8rem;
+    margin: 0 auto;
+    min-height: 100%;
+    background-size: cover;
+}
+
+header
+{
+    width: 16rem;
+    height: 2.25rem;
+    background-color: #aeea00;
+    line-height: 2.25rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+}
+
+    header .goods-Classify
+    {
+        position: absolute;
+        top: -20rem;
+        left: 0;
+        background-color: #aeea00;
+        width: 6rem;
+        padding: .3rem 1rem;
+        transition: top .5s;
+    }
+
+        header .goods-Classify li
+        {
+            width: 6rem;
+            height: 1.4rem;
+            line-height: 1.4rem;
+            font-size: .7rem;
+            color: #fff;
+            text-align: left;
+        }
+
+            header .goods-Classify li a
+            {
+                font-size: .7rem;
+                color: #fff;
+                display: block;
+            }
+
+        header .goods-Classify.active
+        {
+            top: 2.2rem;
+        }
+
+    header .searchText
+    {
+        width: 9.5rem;
+        height: 1.5rem;
+        position: absolute;
+        left: 1rem;
+        top: .35rem;
+        border: none;
+        font-size: .6rem;
+        text-indent: .5rem;
+        -webkit-appearance: none;
+    }
+
+    header .seaForm
+    {
+        display: none;
+    }
+
+.seaForm .rest
+{
+    height: 1.5rem;
+    width: 5.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    border: none;
+    color: #fff;
+    font-size: .6rem;
+    position: absolute;
+    left: 10.5rem;
+    top: .35rem;
+    z-index: 999;
+    background-color: #aeea00;
+    cursor: pointer;
+}
+
+section
+{
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 2.25rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+}
+
+header .return
+{
+    position: absolute;
+    left: 0.7rem;
+    top: .65rem;
+    width: .65rem;
+    height: .65rem;
+    border-left: .085rem solid #fff;
+    border-top: .085rem solid #fff;
+    border-right: .085rem solid transparent;
+    border-bottom: .085rem solid transparent;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+header .title
+{
+    font-size: .9rem;
+    color: #fff;
+}
+
+header .classify
+{
+    position: absolute;
+    left: .5rem;
+    top: 0.35rem;
+    width: .65rem;
+    height: .65rem;
+    padding: .5rem;
+}
+
+header .search
+{
+    position: absolute;
+    right: 3.5rem;
+    top: .65rem;
+    height: .925rem;
+    width: .925rem;
+    cursor: pointer;
+}
+
+header .language
+{
+    position: absolute;
+    right: 0.4rem;
+    top: 0;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+footer
+{
+    height: 2.5rem;
+    width: 16rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 0.1rem;
+    border-top: .05rem solid #777777;
+    z-index:99999;
+}
+
+    footer ul
+    {
+        overflow: hidden;
+        height: 100%;
+    }
+        footer .FooterBtn3 {
+            height: 100%;
+            float: left;
+            width: 33%;
+        }
+
+        footer  .FooterBtn4
+        {
+            height: 100%;
+            float: left;
+            width: 25%;
+        }
+        footer  .FooterBtn5
+        {
+            height: 100%;
+            float: left;
+            width: 20%;
+        }
+            /*footer ul li:nth-child(1) img
+            {
+                width: .75rem;
+                height: .875rem;
+            }
+
+            footer ul li:nth-child(2) img
+            {
+                width: .875rem;
+                height:.875rem;
+            }*/
+
+            /*footer ul li:nth-child(3) img*/
+        footer ul li img
+        {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+
+            /*footer ul li:nth-child(4) img
+            {
+                width: .75rem;
+                height: .875rem;
+            }*/
+
+            footer ul li:nth-child(5) img
+            {
+                width: .75rem;
+                height: .875rem;
+            }
+
+            footer ul li a
+            {
+                display: block;
+                font-size: .7rem;
+                color: #777;
+                text-align: center;
+            }
+
+            footer ul li p:nth-of-type(1)
+            {
+                margin-top: 0.1rem;
+                height: 1rem;
+            }
+
+            /*footer ul li:nth-child(3) p*/
+            footer ul li p
+            {
+                height: auto !important;
+                position: relative;
+            }
+                
+                /*footer ul li:nth-child(3) p span.numCart*/
+                footer ul li p span.numCart
+                {
+                    height: .75rem;
+                    width: .75rem;
+                    background-color: hsl(30, 100%, 46%);
+                    color: #fff;
+                    text-align: center;
+                    line-height: .75rem;
+                    border-radius: 50%;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0.1rem;
+                    font-size: .6rem;
+                }
+
+            /*footer ul li:first-child .iconfont
+            {
+                font-size: .8rem !important;
+            }*/
+
+            footer ul li .iconfont
+            {
+                font-size: .8rem;
+            }
+
+            footer ul li .iconimg {
+                width: .8rem;
+                height: .8rem;
+            }
+
+            footer ul li.current i.iconfont,
+            footer ul li.current p
+            {
+                color: #aeea00 !important;
+            }
+
+            footer ul li.current:nth-child(3) img
+            {
+                display: none;
+            }
+
+            footer ul li.current:nth-child(3) p:before
+            {
+                content: "";
+                background-image: url('/img/icon/footer-cart-current.jpg');
+                background-size: 1.8rem 1.8rem;
+                height: 1.8rem;
+                width: 1.8rem;
+                position: absolute;
+                right: .7rem;
+            }

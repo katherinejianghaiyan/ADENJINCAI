@@ -1,0 +1,68 @@
+﻿section {
+    width:16rem !important;
+}
+.addCoupon {
+    background-color:#fff;
+    padding:.75rem 0.5rem;
+    overflow:hidden;
+}
+    .addCoupon .addText {
+        height:1.5rem;
+        width:10.75rem;
+        border-radius:.125rem;
+        background-color:#f3f3f3;
+        color:#aeea00;
+        text-indent:.75rem;
+        font-size:.6rem;
+        float:left;
+        border:none;
+    }
+    .addCoupon .addBtn {
+        height:1.5rem;
+        line-height:1.5rem;
+        text-align:center;
+        border:none;
+        width:4rem;
+        background-color:#aeea00;
+        color:#fff;
+        font-size:.6rem;
+        border-radius:.125rem;
+        float:left;
+        margin-left:.25rem;
+            cursor:pointer;
+    }
+.couponList {
+    background-color:#f3f3f3;
+    font-size:.5rem;
+    color:#999999;
+        padding-bottom:.5rem;
+}
+    .couponList .title {
+        padding:.5rem;
+    }
+    .couponList .active {
+        background-color:#aeea00 !important;
+    }
+.couponBlock {
+    width:15rem;
+    margin:0 auto .75rem;
+    background-color:#cccccc;
+    border-radius:.25rem;
+    overflow:hidden;
+    cursor:pointer;
+    display:block;
+    position:relative;
+}
+    .couponBlock img {
+        display:block;
+        width:14.5rem;
+        height:5.25rem;
+        float:right;
+    }
+
+        .couponBlock span {
+        position:absolute;
+        right:.1rem;
+        bottom:.15rem;
+        color:#000;
+    }

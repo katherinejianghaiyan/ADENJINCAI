@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54295B5D-88B0-446C-B7F3-367A9DD358B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Luoyi.Common</RootNamespace>
+    <AssemblyName>Luoyi.Common</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\steve.weng\Desktop\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\AoPeng\src\Luoyi.Common\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="PoEB.Common.Cache">
+      <HintPath>..\..\JieKong\PoEB.Common\bin\Debug\PoEB.Common.Cache.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\dll\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QrCodeHelper.cs" />
+    <Compile Include="BarCodeHelper.cs" />
+    <Compile Include="ObjectHelper.cs" />
+    <Compile Include="BasicConverter.cs" />
+    <Compile Include="BasicValidator.cs" />
+    <Compile Include="CompressionHelper.cs" />
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="DataTableHelper.cs" />
+    <Compile Include="DateHelper.cs" />
+    <Compile Include="DES.cs" />
+    <Compile Include="Emoji.cs" />
+    <Compile Include="Enumerable\CustomComparison.cs" />
+    <Compile Include="Enumerable\CustomEqualityComparer.cs" />
+    <Compile Include="Enumerable\EnumerableHelper.cs" />
+    <Compile Include="Enum\EnumHelper.cs" />
+    <Compile Include="Enum\EnumItem.cs" />
+    <Compile Include="Enum\ReaderWriterCache.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FilterAttribute.cs" />
+    <Compile Include="FilterHelper.cs" />
+    <Compile Include="FusionCharts.cs" />
+    <Compile Include="GetCPU.cs" />
+    <Compile Include="GuidHelper.cs" />
+    <Compile Include="HttpClient.cs" />
+    <Compile Include="ImagesHelper.cs" />
+    <Compile Include="IPScanner.cs" />
+    <Compile Include="ITransfer.cs" />
+    <Compile Include="JavaScriptHelper.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflector\ILFieldAccessor.cs" />
+    <Compile Include="Reflector\ILMethodInvoker.cs" />
+    <Compile Include="Reflector\ILPropertyAccessor.cs" />
+    <Compile Include="Reflector\ILReflectorFactory.cs" />
+    <Compile Include="Reflector\IMemberAccessor.cs" />
+    <Compile Include="Reflector\IMethodInvoker.cs" />
+    <Compile Include="Reflector\IReflectorFactory.cs" />
+    <Compile Include="Reflector\Reflector.cs" />
+    <Compile Include="SecurityHelper.cs" />
+    <Compile Include="SqlDataReaderHelper.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="Validate\BooleanValidationHelper.cs" />
+    <Compile Include="Validate\DateTimeValidationHelper.cs" />
+    <Compile Include="Validate\IntValidationHelper.cs" />
+    <Compile Include="Validate\ObjectValidationHelper.cs" />
+    <Compile Include="Validate\StringValidationHelper.cs" />
+    <Compile Include="Validate\Validation.cs" />
+    <Compile Include="Validate\ValidationHelper.cs" />
+    <Compile Include="WebHelper.cs" />
+    <Compile Include="XMLHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

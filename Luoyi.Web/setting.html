@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人设置</title>
+    <link href="/css/common.css" rel="stylesheet" />
+    <link href="/css/layout.css" rel="stylesheet" />
+    <link href="/css/setting.css" rel="stylesheet" />
+    <script src="/js/autoWindow.js"></script>
+    <script src="/js/jquery-1.10.2.min.js"></script>
+</head>
+    <script>
+        $(function () {
+            var $set = $('.setting');
+            var $input = $('.userMsg');
+            $set.on('click', function () {
+                var $p = $(this).siblings('.userMsg');
+                $p.attr('readonly', false).focus();
+            });
+            $input.on('blur', function () {
+                $(this).attr( 'readonly',true);
+            });
+        })
+    </script>
+<body class="container">
+
+    <!--------头部--------->
+    <header>
+        <a class="return" href="javascript:window.history.back(-1)"></a>
+        <span class="title">个人设置</span>
+        <img class="search" src="/img/icon/search_03.png" />
+        <span class="language">English</span>
+    </header>
+
+    <div class="head-img-wrap">
+        <img class="goods-img" src="/img/mine-bg.jpg" />
+        <div class="radius">
+            <img src="/img/goodsList_03.jpg" class="head-img"/>
+        </div>
+    </div>
+    <!----------主体---------->
+    <section>
+        <div class="menuWrap">
+         <a class="menuBlock" href="javascript:;">
+             <span class="imgWrap"><img src="/img/icon/icon-head-img_03.jpg" /></span>
+            <span>头像</span>
+            <p class="userMsg"><img src="/img/imgLine.jpg"/></p>
+        </a>
+        <a class="menuBlock" href="javascript:;">
+            <span class="imgWrap"><img src="/img/icon/icon-name_03.jpg" /></span>
+            <span>用户名</span>
+            <img class="setting" src="/img/icon/icon-setting_03.jpg" />
+            <input class="userMsg" type="text" readonly="readonly" value="Kate Roberts"/>
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <span class="imgWrap"><img src="/img/icon/icon-job_03.jpg" /></span>
+            <span>职业</span>
+            <img class="setting" src="/img/icon/icon-setting_03.jpg" />
+            <input class="userMsg" type="text" readonly="readonly" value="设计师"/>
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <span class="imgWrap"><img src="/img/icon/company_03.jpg" /></span>
+            <span>公司</span>
+            <img class="setting" src="/img/icon/icon-setting_03.jpg" />
+            <input class="userMsg" type="text" readonly="readonly" value="Aden"/>
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <span class="imgWrap"><img src="/img/icon/icon-phone_03.jpg" /></span>
+            <span>手机号</span>
+            <img class="setting" src="/img/icon/icon-setting_03.jpg" />
+            <input class="userMsg" type="tel" readonly="readonly" value="199999999"/>
+        </a>
+        <a class="menuBlock" href="javascript:;">
+             <span class="imgWrap"><img src="/img/icon/icon-email_03.jpg" /></span>
+            <span>邮箱</span>
+            <img class="setting" src="/img/icon/icon-setting_03.jpg" />
+            <input class="userMsg" readonly="readonly" type="email" value="Kate.Roberts@aden.com"/>
+        </a>
+        </div>
+    </section>
+
+
+
+   <!--------底部--------->
+    <footer>
+        <ul>
+            <li class="current">
+                <a href="default.html">
+                    <p>
+                        <i class="iconfont">&#xe61d;</i>
+                    </p>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <p>
+                        <i class="iconfont">&#xe60a;</i>
+                    </p>
+                    <p>消息</p>
+                </a>
+            </li>
+            <li><a href="myCart.html">
+                <p>
+                    <img src="/img/icon/footer-cart_03.jpg" />
+                    <span class="numCart">1</span>
+                </p>
+            </a>
+            </li>
+            <li><a href="javascript:;">
+                <p>
+                    <i class="iconfont">&#xe602;    </i>
+                </p>
+                <p>发现</p>
+            </a></li>
+            <li>
+                <a href="mine.html">
+                    <p>
+                        <i class="iconfont">&#xe63f;</i>
+                    </p>
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
